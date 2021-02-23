@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <html lang="fr">
     <?php
-    $title = 'à propos de ce site';
+    $title = 'diaporama';
     ?>
     <?php include('head.php'); ?>
     <body>
@@ -11,7 +11,7 @@
                 <div class='myLoader'></div>
             </div>
         </div>
-        
+
         <div class="body">
         <?php
         include('navbar.php');

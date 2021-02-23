@@ -16,7 +16,7 @@ function AboutDiapo(){
     let objetDiapo = new MonObjetSection(
         "slideshow",
         "un diaporama à propos",
-        "objectif : expliquer comment j'ai réalisé ce site et détailler les étapes de construction",
+        "objectif : réaliser un diaporama en javascript, créer et manipuler des objets js",
         "#61c6d8",
         5,
         'bodyDiapo',

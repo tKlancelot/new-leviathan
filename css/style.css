@@ -1184,6 +1184,9 @@ nav ul li:hover {
   .case8 {
     margin: 24px auto auto auto !important; }
 
+  .textLegend {
+    font-size: 0.7rem; }
+
   #sphereIcon, .cadreIntro {
     width: 300px;
     height: 300px; }
@@ -1222,7 +1225,7 @@ nav ul li:hover {
   .monParagraphe {
     font-size: 0.74rem;
     margin: auto 10%;
-    height: 6vh; }
+    height: 0vh; }
 
   .cadre {
     margin: auto auto 0 auto; }
