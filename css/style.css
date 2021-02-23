@@ -1236,7 +1236,7 @@ nav ul li:hover {
     background-color: #ccfa; }
 
   .body3d nav {
-    background: #91afc0; }
+    background: #95abdd; }
 
   .body3d .cadreConteneur .cadreContent {
     flex-direction: column;
@@ -1266,6 +1266,6 @@ nav ul li:hover {
     margin-top: unset; }
 
   .panneauGauche, .panneauDroit {
-    background: #718fa0; } }
+    background: #95abdd; } }
 
 /*# sourceMappingURL=style.css.map */

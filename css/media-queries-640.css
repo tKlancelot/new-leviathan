@@ -183,7 +183,7 @@
     background-color: #ccfa; }
 
   .body3d nav {
-    background: #91afc0; }
+    background: #95abdd; }
 
   .body3d .cadreConteneur .cadreContent {
     flex-direction: column;
@@ -213,6 +213,6 @@
     margin-top: unset; }
 
   .panneauGauche, .panneauDroit {
-    background: #718fa0; } }
+    background: #95abdd; } }
 
 /*# sourceMappingURL=media-queries-640.css.map */
