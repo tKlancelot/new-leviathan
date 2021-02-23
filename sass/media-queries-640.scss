@@ -1,0 +1,264 @@
+@media screen and (max-width : 640px){
+    nav{
+        width: 100vw;
+        border-radius: unset;
+        margin:0;
+    }
+
+    .hexagones, .bodyParcours, .bodyCarteVisite, .bodyOuvrages, .bodyMemory, .body3d, .bodyDiapo, .bodyMentions{
+        min-height: 100vh!important;
+        margin: unset;
+        border-radius:unset;
+    }
+
+    .cadreConteneur{
+        border-radius: unset;
+        flex: auto;
+        height: 100%;
+        flex-direction: column-reverse;
+        display: flex;
+        margin: unset;
+        width:100vw;
+    }
+
+    .bgBobines{
+        animation: unset;
+        height: unset;
+    }
+    .cadreContent{
+        // max-height: 50vh;
+        display: flex;
+    }
+
+    .pageGauche, .pageDroite{
+        margin:auto 4%;
+        min-height: 44vh;
+
+    }
+
+    .pageDroite{
+        margin-left: 0%;
+    }
+
+    .pageGauche{
+        margin-right: 0%;
+    }
+
+    .zoneTitre, .zoneNumero, .zoneNumeroGauche{
+        font-size:0.7rem;
+    }
+
+    .zoneTitre{
+        text-align: center;
+        border-bottom: unset;
+        text-decoration: underline;
+    }
+    
+    .legend{
+        font-size:0.6rem;
+    }
+
+    .bandeBouton{
+        margin: unset;
+    }
+
+    .zoneBouton {
+        height: 8vh;
+        width: 100%;
+        flex-basis: auto;
+        text-align: center;
+        display: flex;
+    }
+
+    .paraLegend, .tousDroits{
+        font-size: 0.7rem;
+    }
+
+    .hexagones{
+        width: 100vw;
+        min-width: unset;
+    }
+
+    .myGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100px 100px 100px;
+        position: absolute;
+        animation: rotationSphere 30s linear infinite;
+        width: 300px;
+    }
+
+    .myGrid div img{
+        transform:matrix3d(1, 0, 0, 0, 0, 1.2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1.6);
+    }
+
+    .case3{
+        margin:auto auto 0 -16px !important;
+    }
+    .case1{
+        margin:auto -16px 0 auto !important;
+    }
+    .case7{
+        margin:0 -16px auto auto !important;
+    }
+    .case9{
+        margin:0 auto auto -16px !important;
+    }
+    
+    .case2{
+        margin:auto auto 24px auto !important;
+    }
+    .case4{
+        margin:auto 24px auto auto !important;
+    }
+
+    .case6{
+        margin:auto auto auto 24px !important;
+    }
+
+    .case8{
+        margin:24px auto auto auto !important;
+    }
+
+
+    #sphereIcon, .cadreIntro{
+        width: 300px;
+        height: 300px;
+    }
+    .radiusCircle{
+        transform: rotateX(44deg);
+    }
+    .cadreEmplacement{
+        max-height: 54vh!important;
+    }
+
+    .cadreEmplacement div {
+        margin: auto;
+        // width: auto;
+        flex-direction: column;
+    }
+    .legendContent{
+        font-size: 0.7rem;
+    }
+    .cadreEmplacement div img{
+        // transform: scale(0.40);
+    }
+
+    .cadreEmplacement div div{
+        transform: scale(0.8);
+        display: flex;
+        width: auto;
+    }
+    
+    .textLevel{
+        animation: unset;
+    }
+
+    .divContenu{
+        margin-top: unset;
+    }
+
+    .carte{
+        width:100px;
+        height: 120px;
+    }
+    .paraTitre1{
+        font-size: 1.4rem;
+    }
+
+    .monParagraphe{
+        font-size:0.74rem;
+        margin: auto 10%;
+        height: 6vh;
+    }
+
+    .cadre{
+        margin: auto auto 0 auto;
+    }
+    .divContenu{
+        height: 6.4vh;
+        border-radius: unset;
+    }
+
+    .bandeBoutonDiapo{
+        margin:0;
+    }
+    .scrollMention, .bloc{
+        width:100vw;
+    }
+    .chapter{
+        flex-wrap: wrap;
+        min-height: 18vh;
+    }
+    .maDiv p{
+        font-size:0.7rem;
+    }
+
+    .maDiv h3, .titreMention{
+        font-size:0.9rem;
+        line-height: 2.4rem;
+        text-underline-offset: 4px;
+    }
+    .boutonScrollTo{
+        margin: unset;
+        top:unset;
+        width: 32px;
+        height:32px;
+    }
+
+    .myGrid2{
+        margin: auto 10%;
+        min-height: 44vh;
+    }
+    .emplacement{
+        width:64px;
+        height:64px;
+    }
+
+    .bodyCarteVisite .cadreConteneur .cadreContent,.bodyParcours .cadreConteneur .cadreContent, .cadre3d canvas,.bodyMentions .cadreConteneur .cadreContent {
+        background-image: url(../assets/intro-svg/background-bubble.svg);
+        background-blend-mode: overlay;
+        background-color: #ccfa;
+
+    }
+
+    .body3d nav {
+        background:#91afc0;
+    }
+
+    .body3d .cadreConteneur .cadreContent{
+        flex-direction: column;
+        height: 88vh;
+    }
+
+    .body3d .cadreConteneur{
+        flex:unset;
+    }
+
+    .body3d .cadreConteneur .divContenu{
+        bottom: 0;
+        position: fixed;
+        width: 100vw;
+    }
+
+    .cadre3d canvas{
+        width: 100vw;
+        height: -webkit-fill-available;
+    }
+    .sousPanneau{
+        display:flex;
+        grid-gap:4px;
+        button{
+            height: 32px;
+            width: 32px;
+            margin:2px 4px;
+        }
+    }
+    .body3d .divContenu{
+        margin-top:unset;
+    }
+
+    .panneauGauche, .panneauDroit{
+        background: #718fa0;
+    }
+}

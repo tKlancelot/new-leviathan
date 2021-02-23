@@ -1,0 +1,51 @@
+@keyframes fadeInOut {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 1; }
+  80% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes fadeOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+@keyframes backgroundTranslate {
+  from {
+    background-position: 100% 0%; }
+  to {
+    background-position: 0% 100%; } }
+@keyframes essaiRotation {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(-45deg); } }
+@keyframes rotationSphere2 {
+  from {
+    transform: rotate(360deg); }
+  to {
+    transform: rotate(0deg); } }
+@keyframes rotationSphere {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+@keyframes superClasse {
+  from {
+    transform: rotate3d(0, 1, 0, 180deg); }
+  to {
+    transform: rotate3d(0, 1, 0, 0deg); } }
+@keyframes flipBack {
+  from {
+    transform: rotate3d(0, 1, 0, 180deg); }
+  to {
+    transform: rotate3d(0, 1, 0, 0deg); } }
+
+/*# sourceMappingURL=animations.css.map */

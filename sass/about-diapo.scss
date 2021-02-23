@@ -1,0 +1,200 @@
+.bodyDiapo{
+    flex-direction: column;
+    nav, .cadreConteneur .divContenu{
+        // background-color:#d4f6fc;
+        // background-color:#61c6d8;
+        background-color:#95abdd;
+    }
+}
+
+.bodyDiapo .cadreContent{
+    flex-direction:column ;
+}
+
+.cadreContent h4, .cadreContent p{
+    color:#222e;
+}
+
+.cadre{
+    width: 100%;
+    max-width: 100%;
+    height: 400px;
+    display: flex;
+    margin: auto auto 0;
+    justify-content: center;
+    background-size: 100%;
+    background-position: 25% 100%;
+    background-repeat: no-repeat;
+}
+
+.carte{
+    display: flex;
+    margin: auto;
+    width: 200px;
+    height: 240px;
+    flex-basis: unset !important;
+    background: unset;
+    transition: all 0.6s !important;
+    border-radius: 10px;
+}
+
+.paraTitre1{
+    font-family: 'Swanky and Moo Moo', sans-serif;
+    width: auto;
+    margin: auto;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.6rem;
+    // color: #fff;
+    letter-spacing: 0.06rem;
+}
+
+
+.monParagraphe{
+    font-family: 'Lato', sans-serif;
+    margin: auto;
+    font-size: 0.94rem;
+    text-align: center;
+    // color: white;
+    letter-spacing: 0.05rem;
+    // border:1px solid red;
+}
+
+.bandeBoutonDiapo{
+    justify-content: space-evenly;
+    width: 100%;
+    display: flex;
+    min-height:4vh;
+    margin: 0 auto auto;
+    background-color: #95abdd;
+    button{
+        flex-basis: auto;
+        margin:auto;
+    }  
+}
+.playDiapo, .autoPlay, .boutonScrollTo{
+    width:48px;
+    height:48px;
+    background-repeat: no-repeat;
+    background:unset;
+
+    background-size: cover;
+    border:none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.playDiapo{
+    background-image:url('../assets/intro-svg/icon-play-diapo.svg');
+    &:hover{
+        background-image:url('../assets/intro-svg/icon-play-diapo-hover.svg');
+    }
+}
+
+.autoPlay{
+    background-image:url('../assets/intro-svg/icon-autoplay.svg');
+    &:hover{
+        background-image:url('../assets/intro-svg/icon-autoplay-hover.svg');
+    }
+}
+
+.buttonStop{
+    background-image:url('../assets/intro-svg/buttonStop.svg');
+    &:hover{
+        background-image:url('../assets/intro-svg/buttonStop-hover.svg');
+    }
+}
+
+
+.flipHor{
+    animation:rotation2 ease-in 0.5s forwards;
+}
+
+.fadeIn{
+    animation:fadeIn ease-in 2s forwards;
+}
+
+.bounceHor{
+    animation:bounceHor ease-in 0.5s forwards;
+}
+
+.bounce{
+    animation:bounce ease-in 1s forwards;
+}
+
+.flipFlop{
+    animation:flipFlop ease-in 1s;
+}
+
+
+@keyframes rotation2{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0.4;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes flipFlop{
+    from{
+        transform: rotate(-180deg);
+        /* transform: scaleY(1); */
+    }
+    25%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: scaleY(0.9);
+    }
+    75%{
+        transform: scaleX(0.9);
+    }
+    to{
+        transform: scaleX(1);
+        /* transform: scaleY(1); */
+    }
+}
+
+
+@keyframes bounce{
+    from {
+       transform:translate(0px,0px);
+       }
+    50%  {
+       transform:translate(0px,-16px);
+       }
+    to  {
+       transform:translate(0px,0px);
+       }
+}
+
+
+
+@keyframes bounceHor{
+
+    0% {
+       transform:translate(0px,0px);
+       }
+    25%  {
+       transform:translate(-12px,0px);
+       }
+    50%  {
+       transform:translate(0px,0px);
+       }
+    75%  {
+       transform:translate(12px,0px);
+       }
+    100%  {
+       transform:translate(0px,0px);
+       }
+}

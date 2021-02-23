@@ -1,0 +1,110 @@
+.body3d {
+  flex-direction: column; }
+  .body3d nav, .body3d .cadreConteneur .divContenu {
+    background-color: #95abdd;
+    border: unset; }
+
+.body3d .cadreContent {
+  border: unset;
+  background: unset !important; }
+
+.body3d .divContenu {
+  margin-top: 8px; }
+
+.cadre3d canvas {
+  background-image: url("../assets/intro-svg/background-bubble.svg");
+  background-blend-mode: hard-light; }
+
+.body3d .cadreConteneur .cadreContent {
+  display: flex;
+  justify-content: center; }
+
+.panneauGauche, .panneauDroit {
+  flex-basis: 6%;
+  background: lightgrey;
+  display: grid; }
+
+.cadre3d {
+  flex-basis: 88%;
+  display: flex;
+  justify-content: center; }
+  .cadre3d canvas {
+    margin: auto; }
+
+.panneauGauche, .panneauDroit {
+  background-size: cover;
+  background-position: center;
+  background-color: #95abdd;
+  background-blend-mode: luminosity; }
+
+.buttonA[disabled], .buttonB[disabled] {
+  opacity: 0.4;
+  filter: grayscale(1); }
+
+.buttonA, .buttonB {
+  background: radial-gradient(circle, #4C57bF, #5C67CF, #7C87eF);
+  box-shadow: 0px 0px 1px white inset,0px 0px 2px white inset,0px 0px 3px white inset,0px 0px 4px white inset;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Denk One";
+  cursor: pointer; }
+
+.buttonB {
+  background: radial-gradient(circle, #51b792, #61C7A2, #71d7b2);
+  box-shadow: 0px 0px 1px white inset,0px 0px 2px white inset,0px 0px 3px white inset,0px 0px 4px white inset; }
+
+.sousPanneau {
+  margin: auto;
+  display: grid;
+  grid-template-rows: 14% 14% 14% 14% 14% 14% 14%;
+  grid-gap: 22px;
+  grid-template: none; }
+  .sousPanneau button {
+    height: 48px;
+    width: 48px;
+    background-position: center;
+    background-size: cover;
+    background-color: unset;
+    border: unset;
+    transition: 0.5s; }
+    .sousPanneau button:hover {
+      cursor: pointer; }
+
+.boutonA {
+  background-image: url("../assets/intro-svg/icon-paint-house.svg"); }
+  .boutonA:hover {
+    background-image: url("../assets/intro-svg/icon-paint-house-hover.svg"); }
+
+.toggleToit {
+  background-image: url("../assets/intro-svg/icon-roof.svg"); }
+  .toggleToit:hover {
+    background-image: url("../assets/intro-svg/icon-roof-hover.svg"); }
+
+.toggleMur {
+  background-image: url("../assets/intro-svg/icon-walls.svg"); }
+  .toggleMur:hover {
+    background-image: url("../assets/intro-svg/icon-wall-hover.svg"); }
+
+.toggleSol {
+  background-image: url("../assets/intro-svg/icon-floor.svg"); }
+  .toggleSol:hover {
+    background-image: url("../assets/intro-svg/icon-ground-hover.svg"); }
+
+.toggleCloison {
+  background-image: url("../assets/intro-svg/icon-cloison.svg"); }
+  .toggleCloison:hover {
+    background-image: url("../assets/intro-svg/icon-cloison-hover.svg"); }
+
+.togglePorte {
+  background-image: url("../assets/intro-svg/icon-door.svg"); }
+  .togglePorte:hover {
+    background-image: url("../assets/intro-svg/icon-door-hover.svg"); }
+
+.toggleFenetre {
+  background-image: url("../assets/intro-svg/icon-window.svg"); }
+  .toggleFenetre:hover {
+    background-image: url("../assets/intro-svg/icon-window-hover.svg"); }
+
+/*# sourceMappingURL=section-3d.css.map */

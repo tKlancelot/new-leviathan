@@ -1,0 +1,156 @@
+.bodyParcours {
+  animation: fadeIn linear 0.5s;
+  flex-direction: column; }
+  .bodyParcours nav, .bodyParcours .cadreConteneur .divContenu, .bodyParcours .bandeBouton {
+    border: unset; }
+
+.bodyParcours .cadreConteneur .cadreContent {
+  background-color: #bbe6ff;
+  background-blend-mode: hard-light; }
+
+.bodyParcours .divContenu {
+  margin-top: unset; }
+
+.bgBobines {
+  background: url("../assets/global/bobines-background.png");
+  animation: backgroundTranslate2 10s linear infinite;
+  background-position: center;
+  margin: auto;
+  height: 512px;
+  overflow: hidden;
+  width: 100%; }
+
+@keyframes backgroundTranslate2 {
+  from {
+    background-position: 0% 102%; }
+  to {
+    background-position: 100% 0%; } }
+.pageGauche, .pageDroite {
+  border: 1px solid #444;
+  flex-basis: 50%;
+  border-bottom: 1px solid #444;
+  display: flex;
+  flex-direction: column; }
+
+.zoneLegend {
+  width: 80%; }
+
+.pageGauche, .pageDroite {
+  background-image: url("../assets/intro-png/page-texture.jpg");
+  background-position: center;
+  background-size: cover;
+  transition: 1s; }
+
+.pageGauche:hover, .pageDroite:hover {
+  filter: sepia(0.4); }
+
+.pageDroite {
+  border-top-left-radius: 50%  4%;
+  border-top-right-radius: 3%  50%;
+  border-bottom-right-radius: 0.5%  49%; }
+
+.pageGauche {
+  border-top-right-radius: 50%  4%;
+  border-top-left-radius: 3%  50%;
+  border-bottom-left-radius: 0.5%  49%; }
+
+.legend, .zoneTitre, .zoneNumero {
+  text-align: justify;
+  font-family: "Lato",serif;
+  font-size: 1rem;
+  color: #444; }
+
+.zoneTitre {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  align-self: center;
+  justify-self: center;
+  justify-content: center;
+  margin: 2vh 0 auto;
+  border-bottom: 1px solid #444; }
+
+.pageDroite {
+  margin: 4% 16% 4% 0;
+  box-shadow: 2px 0px 1px #444a inset, 4px 0px 0px 1px inset #4442, 8px 0px 1px 2px inset #4442, 0px 2px 0px 0px #444,0px 4px 1px 0px #444;
+  filter: brightness(101%); }
+
+.pageGauche {
+  margin: 4% 0% 4% 16%;
+  box-shadow: -2px 0px 1px #444a inset, -4px 0px 0px 4px inset #4442, -12px 0px 1px 2px inset #4442, 0px 2px 0px 0px #444,0px 4px 1px 0px #444; }
+
+.zoneContent, .zoneLegend {
+  margin: auto; }
+
+.zoneContent img {
+  width: 50%;
+  display: flex;
+  margin: auto;
+  filter: opacity(0.4); }
+
+.bandeBouton {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 8px auto auto;
+  display: flex;
+  justify-content: center; }
+
+.zoneBouton {
+  height: 4vh;
+  width: 100%;
+  flex-basis: 10%;
+  text-align: center;
+  display: flex; }
+
+.boutonCentre, .boutonCarteVisite {
+  background-size: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.72; }
+
+.boutonCentre {
+  background-image: url("../assets/intro-svg/ornement-1.svg");
+  transition: all 0.5s; }
+  .boutonCentre:hover {
+    background-image: url("../assets/intro-svg/ornement-1-hover.svg"); }
+
+.zoneNumero {
+  width: auto;
+  display: flex;
+  justify-content: flex-end;
+  padding-inline-end: 0.25rem; }
+
+.zoneNumeroGauche {
+  width: auto;
+  display: flex;
+  justify-content: flex-start;
+  padding-inline-start: 0.25rem; }
+
+.boutonNext, .boutonPrev {
+  border: unset;
+  background: unset;
+  background-size: 30%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  transition: 0.5s; }
+
+.boutonNext[disabled], .boutonPrev[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+  filter: hue-rotate(160deg); }
+
+.boutonNext {
+  background-image: url("../assets/intro-svg/icon-next.svg"); }
+
+.boutonNext:hover {
+  background-image: url("../assets/intro-svg/icon-next-hover.svg"); }
+
+.boutonPrev {
+  background-image: url("../assets/intro-svg/icon-prev.svg"); }
+
+.boutonPrev:hover {
+  background-image: url("../assets/intro-svg/icon-prev-hover.svg"); }
+
+/*# sourceMappingURL=parcours.css.map */

@@ -1,0 +1,52 @@
+.cadreConteneur {
+  border-radius: 0px 0px 4px 4px;
+  box-sizing: border-box;
+  flex: auto;
+  height: 100%;
+  flex-direction: column-reverse;
+  display: flex;
+  margin: auto 4px;
+  background-blend-mode: hard-light; }
+
+.divContenu {
+  flex-direction: column;
+  text-align: center;
+  height: 6vh;
+  display: flex;
+  margin-top: 8px;
+  border-radius: 0px 0px 4px 4px; }
+
+.cadreContent {
+  display: flex;
+  box-sizing: border-box;
+  flex: auto; }
+
+.paraLegend {
+  font-family: "Denk One",cursive;
+  letter-spacing: 0.06rem; }
+
+.paraLegend, .tousDroits {
+  margin: auto;
+  width: 100%;
+  font-size: 0.92rem;
+  color: white; }
+
+.tousDroits {
+  letter-spacing: 0.1rem;
+  font-family: "Lato",sans-serif;
+  font-size: 0.76rem;
+  opacity: 0.8; }
+
+.textLegend {
+  color: white;
+  font-family: "Denk One", cursive;
+  font-size: 0.90rem;
+  letter-spacing: 0.03rem;
+  cursor: pointer;
+  margin: auto;
+  text-transform: uppercase; }
+
+.flexColumn {
+  flex-direction: initial; }
+
+/*# sourceMappingURL=structure-dom.css.map */

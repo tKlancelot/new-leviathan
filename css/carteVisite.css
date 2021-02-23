@@ -1,0 +1,91 @@
+.bodyCarteVisite {
+  flex-direction: column; }
+  .bodyCarteVisite nav, .bodyCarteVisite .divContenu {
+    background: linear-gradient(to right, #a26fbf, #b27fcf, #c28fdf, #b27fcf, #a26fbf); }
+
+.bodyCarteVisite nav {
+  border: unset; }
+
+.bodyCarteVisite .cadreConteneur .cadreContent {
+  background-image: url("../assets/intro-svg/background-bubble.svg");
+  background-blend-mode: hard-light; }
+
+.flexColumn2 {
+  flex-direction: column; }
+
+.boutonCarteVisite {
+  background-image: url("../assets/intro-svg/ornement-carte-visite.svg");
+  transition: all 0.5s; }
+  .boutonCarteVisite:hover {
+    background-image: url("../assets/intro-svg/ornement-carte-visite-hover.svg"); }
+
+.myTitle {
+  justify-content: center;
+  display: flex;
+  height: 6vh; }
+  .myTitle h2 {
+    color: white;
+    font-family: 'Yusei Magic';
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.16rem;
+    display: flex;
+    margin: auto; }
+
+.myContent {
+  display: contents; }
+
+@keyframes croissance {
+  from {
+    flex-basis: 0%;
+    width: 0; } }
+.cadreEmplacement {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: auto;
+  flex: auto;
+  grid-template-rows: 50%; }
+  .cadreEmplacement div {
+    margin: auto;
+    display: flex;
+    width: 60%; }
+    .cadreEmplacement div img {
+      transform: scale(0.5);
+      filter: opacity(0.8); }
+
+.divLevel {
+  filter: drop-shadow(#0007 0px 1px 0px); }
+
+.textLevel {
+  height: auto;
+  color: white;
+  text-align: left;
+  transition: 1s all;
+  animation: croissance 1s linear forwards;
+  margin: auto 0 !important;
+  font-family: 'Denk One',cursive;
+  padding: 6px;
+  font-size: 1rem; }
+
+.divLevel {
+  border: 2px solid var(--ceruleanAlt);
+  border-radius: 4px;
+  margin: auto 2px !important;
+  padding: 4px;
+  background-color: #eef3ff; }
+
+.legendContent {
+  color: #333a;
+  opacity: 0.8;
+  margin: auto;
+  font-family: 'Yusei Magic';
+  font-size: 1rem;
+  letter-spacing: 0.02rem;
+  padding: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center; }
+
+/*# sourceMappingURL=carteVisite.css.map */

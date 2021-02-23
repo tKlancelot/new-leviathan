@@ -1,0 +1,42 @@
+nav {
+  display: flex;
+  margin: 4px 4px 0;
+  /* width: 100%; */
+  box-sizing: border-box;
+  border-radius: 4px 4px 0px 0px;
+  margin-bottom: 8px; }
+
+nav ul {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  height: 6vh; }
+
+nav ul li {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin: auto;
+  height: 100%;
+  transition: 0.2s; }
+  nav ul li a {
+    color: white;
+    margin: auto;
+    text-align: center;
+    transition: 1s;
+    text-shadow: 0px 1px 0px white; }
+    nav ul li a img {
+      width: 72%;
+      margin-top: 2px;
+      transition: 0.8s; }
+
+nav ul li:hover {
+  animation: scaleBouton 0.1s ease-in; }
+
+@keyframes scaleBouton {
+  from {
+    transform: scale(0.92); }
+  to {
+    transform: scale(1); } }
+
+/*# sourceMappingURL=navbar.css.map */

@@ -1,0 +1,70 @@
+.bodyMentions {
+  flex-direction: column; }
+  .bodyMentions nav, .bodyMentions .cadreConteneur .divContenu {
+    background-color: #95abdd;
+    border: unset; }
+
+.bodyMentions .cadreConteneur .cadreContent {
+  background-image: url("../assets/intro-svg/background-bubble.svg");
+  background-blend-mode: hard-light; }
+
+.scrollMention {
+  overflow-y: scroll;
+  max-height: 562.7px;
+  scroll-behavior: smooth; }
+
+.bandeTitre {
+  display: flex;
+  margin: 4rem auto; }
+  .bandeTitre .titreMention {
+    margin: auto; }
+
+.maDiv h3, .titreMention {
+  font-family: "Denk One",cursive;
+  letter-spacing: 0.16rem;
+  text-decoration: underline;
+  text-decoration-thickness: 8px;
+  text-decoration-color: #4444;
+  text-underline-offset: 8px;
+  color: #3338;
+  text-transform: uppercase; }
+
+.chapter {
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 6vh;
+  align-items: center;
+  list-style-type: none;
+  margin: auto 10%; }
+  .chapter li a {
+    font-family: "Denk One",cursive;
+    color: #3336;
+    transition: 0.5s; }
+    .chapter li a:hover {
+      color: #333c; }
+
+.boutonScrollTo {
+  position: absolute;
+  margin-left: 51.25%;
+  margin-top: 0.2%;
+  background-image: url("../assets/intro-svg/icon-arrow-top.svg"); }
+  .boutonScrollTo:hover {
+    background-image: url("../assets/intro-svg/icon-arrow-top-hover.svg"); }
+
+.maDiv {
+  margin: 2% 10%; }
+  .maDiv h3 {
+    margin: 4rem auto;
+    font-size: 1.1rem;
+    opacity: 1; }
+  .maDiv p {
+    font-family: "Lato",sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.02rem;
+    color: #333d;
+    text-align: justify; }
+
+.maDiv h3 + p {
+  text-indent: 1.6rem; }
+
+/*# sourceMappingURL=mentions-legales.css.map */

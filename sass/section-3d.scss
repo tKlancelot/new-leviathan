@@ -1,0 +1,160 @@
+.body3d{
+    flex-direction: column;
+    nav, .cadreConteneur .divContenu{
+        // background:linear-gradient(to right,#51b6c8,#61c6d8,#61c6d8,#51b6c8);
+        // background:linear-gradient(45deg, #7e9eb0, #8eaec0, #8eaec0, #7e9eb0);
+        // background-color:#61c6d8;
+        background-color:#95abdd;
+        border:unset;
+    }
+}
+
+.body3d .cadreContent{
+    border:unset;
+    background:unset!important;
+}
+
+.body3d .divContenu{
+    margin-top:8px;
+}
+
+.cadre3d canvas{
+    background-image:url('../assets/intro-svg/background-bubble.svg');
+    background-blend-mode: hard-light;
+}
+
+.body3d .cadreConteneur .cadreContent{
+    display: flex;
+    justify-content: center;
+    // flex-wrap:wrap;
+}
+
+.panneauGauche, .panneauDroit{
+    // border-left:1px solid var(--ceruleanAlt);
+    // border-right:1px solid var(--ceruleanAlt);
+    flex-basis:6%;
+    background:lightgrey;
+    display: grid;
+}
+
+.cadre3d{
+    flex-basis: 88%;
+    display:flex;
+    justify-content: center;
+    // border-left:3px solid var(--ceruleanAlt);
+    // border-right:3px solid var(--ceruleanAlt);
+    canvas{
+        margin:auto;
+    }
+}
+
+
+.panneauGauche, .panneauDroit{
+    // background-image:url('../assets/intro-svg/texture-3d.svg');
+    background-size: cover;
+    background-position: center;
+    // box-shadow:0px 0px 1px 1px #253ca3 inset,0px 0px 2px 2px #253ca3 inset,0px 0px 2px 2px #253ca3 inset!important;
+    // background: linear-gradient(to bottom, #455cc3,#455cc3, #455cc3, #556cd3, #657ce3,#758cf3,#657ce3, #556cd3, #556cd3, #455cc3, #455cc3, #354cb3);
+    // background:linear-gradient(45deg,#556cd3,#657ce3,#758cf3,#657ce3,#657ce3,#556cd3,#556cd3,#455cc3);
+    // background:linear-gradient(45deg,#51b6c8,#61c6d8,#61c6d8,#51b6c8);
+    // background:linear-gradient(45deg,#819fb0,#91afc0,#a1bfd0,#91afc0);
+    background-color:#95abdd;
+    // border-radius:4px;   
+    background-blend-mode: luminosity;
+    // background-blend-mode: hard-light;
+}
+
+.buttonA[disabled], .buttonB[disabled]{
+    opacity: 0.4;
+    filter:grayscale(1);
+}
+
+.buttonA,.buttonB{
+    background:radial-gradient(circle,#4C57bF,#5C67CF,#7C87eF);
+    box-shadow: 0px 0px 1px white inset,0px 0px 2px white inset,0px 0px 3px white inset,0px 0px 4px white inset;
+    border-radius:8px;
+    font-size:1.4rem;
+    text-transform: uppercase;
+    color:white;
+    font-family: "Denk One";
+    cursor: pointer;
+}
+
+.buttonB{
+    background:radial-gradient(circle,#51b792,#61C7A2,#71d7b2);
+    box-shadow: 0px 0px 1px white inset,0px 0px 2px white inset,0px 0px 3px white inset,0px 0px 4px white inset;
+
+}
+
+
+.sousPanneau{
+    margin: auto;
+    display: grid;
+    grid-template-rows: 14% 14% 14% 14% 14% 14% 14%;
+    grid-gap: 22px;
+    grid-template: none;
+    button{
+        height:48px;
+        width:48px;
+        background-position: center;
+        background-size: cover;
+        background-color: unset;
+        border:unset;
+        // opacity: 0.8;
+        transition: 0.5s;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+.boutonA{
+    background-image:url('../assets/intro-svg/icon-paint-house.svg');
+    &:hover{
+        background-image:url('../assets/intro-svg/icon-paint-house-hover.svg');
+    }
+}
+
+.toggleToit{
+    background-image:url('../assets/intro-svg/icon-roof.svg');
+    &:hover{
+        background-image:url('../assets/intro-svg/icon-roof-hover.svg');
+    }
+}
+
+.toggleMur{
+    background-image:url('../assets/intro-svg/icon-walls.svg');
+    &:hover{
+        background-image:url('../assets/intro-svg/icon-wall-hover.svg');
+    }
+        
+}
+
+
+.toggleSol{
+    background-image:url('../assets/intro-svg/icon-floor.svg');
+    &:hover{
+        background-image:url('../assets/intro-svg/icon-ground-hover.svg');
+    }
+}
+
+.toggleCloison{
+    background-image:url('../assets/intro-svg/icon-cloison.svg');
+    &:hover{
+        background-image:url('../assets/intro-svg/icon-cloison-hover.svg');
+    }
+}
+
+.togglePorte{
+    background-image:url('../assets/intro-svg/icon-door.svg');
+    &:hover{
+        background-image:url('../assets/intro-svg/icon-door-hover.svg');
+    }
+}
+
+.toggleFenetre{
+    background-image:url('../assets/intro-svg/icon-window.svg');
+    &:hover{
+        background-image:url('../assets/intro-svg/icon-window-hover.svg');
+    }
+}

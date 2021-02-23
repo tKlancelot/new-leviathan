@@ -1,0 +1,14 @@
+.bodyOuvrages{
+    flex-direction: column;
+    nav, .cadreConteneur .divContenu{
+        // background-color:#f2dbff;
+        // background-color:#c28fdf;
+        background-color:#95abdd;
+    }
+}
+
+
+.bodyOuvrages .cadreConteneur .cadreContent{
+    background-image: url(../assets/intro-svg/background-bubble.svg);
+    background-blend-mode: hard-light;
+}

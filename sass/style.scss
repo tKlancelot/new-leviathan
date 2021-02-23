@@ -1,0 +1,40 @@
+*{
+    padding:unset;
+    margin:unset;
+    cursor: url("../assets/global/Polygon.cur"), auto;
+}
+
+body{
+    // background-image:url('../assets/global/savane.jpg');
+    // background-image:url('../assets/global/savane.jpg');
+}
+
+a{
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+:root{
+    --ceruleanAlt: #3c5480; 
+    --cerulean: #4A72DE; 
+    --ceruleanLightest: #8BB3FF; 
+    --ceruleanUltraLight: #aBc3FF; 
+    --ceruleanAltLight: #e2eaff; 
+    --ceruleanDark: #2A52BE; 
+    --ceruleanUltraDark: #0e286e; 
+}
+
+@import "fonts.scss";
+@import "animations.scss";
+@import "structure-dom.scss";
+@import "intro.scss";
+@import "navbar.scss";
+@import "parcours.scss";
+@import "carteVisite.scss";
+@import "quelques-ouvrages.scss";
+@import "memory-game.scss";
+@import "section-3d.scss";
+@import "about-diapo.scss";
+@import "mentions-legales.scss";
+@import "media-queries-640.scss";

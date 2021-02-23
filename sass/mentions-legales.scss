@@ -1,0 +1,94 @@
+.bodyMentions{
+    flex-direction: column;
+    nav, .cadreConteneur .divContenu{
+        // background-color:#e6eaee;
+        // background-color:#9ca0a5;
+        // background-color:#c28fdf;
+        // background: linear-gradient(to right, #925faf,#a26fbf, #a26fbf, #a26fbf, #b27fcf, #c28fdf, #c28fdf, #c28fdf, #b27fcf, #a26fbf);
+        // background: linear-gradient(to right, #a26fbf,#b27fcf, #c28fdf, #b27fcf, #a26fbf);
+        background-color:#95abdd;
+        border:unset;
+    }
+}
+
+.bodyMentions .cadreConteneur .cadreContent{
+    background-image:url('../assets/intro-svg/background-bubble.svg');
+    background-blend-mode: hard-light;
+}
+
+.scrollMention{
+    overflow-y: scroll;
+    max-height: 562.7px;
+    scroll-behavior: smooth;
+}
+
+.bandeTitre{
+    display: flex;
+    margin: 4rem auto;
+    .titreMention{
+        margin:auto;
+    }
+}
+
+.maDiv h3, .titreMention{
+    font-family: "Denk One",cursive;
+    letter-spacing: 0.16rem;
+    text-decoration: underline;
+    text-decoration-thickness: 8px;
+    text-decoration-color: #4444;
+    text-underline-offset: 8px;
+    color:#3338;
+    text-transform: uppercase;
+}
+
+.chapter{
+    display:flex;
+    justify-content: space-evenly;
+    min-height: 6vh;
+    align-items: center;
+    list-style-type: none;
+    margin:auto 10%;
+
+    li a{
+        font-family: "Denk One",cursive;
+        // color:white;
+        color:#3336;
+        transition: 0.5s;
+        &:hover{
+            color:#333c;
+        }
+    }
+}
+
+.boutonScrollTo{
+    position: absolute;
+    margin-left:51.25%;
+    margin-top:0.2%;
+    background-image:url('../assets/intro-svg/icon-arrow-top.svg');
+    &:hover{
+        background-image:url('../assets/intro-svg/icon-arrow-top-hover.svg');
+    }
+}
+
+.maDiv{
+    margin:2% 10%;
+
+    h3{
+        margin:4rem auto;
+        font-size:1.1rem;
+        opacity: 1;
+    }
+    p{
+        font-family: "Lato",sans-serif;
+        font-size:0.9rem;
+        letter-spacing: 0.02rem;
+        color:#333d;
+        // text-shadow:0px 0px #444,0px 0px 1px #222,0px 1px 1px #222;
+        text-align: justify;
+    }
+}
+
+.maDiv h3 + p{
+    // color:red;
+    text-indent:1.6rem;
+}
