@@ -1090,8 +1090,14 @@ nav ul li:hover {
     border-radius: unset;
     margin: 0; }
 
+  body {
+    min-width: unset;
+    max-width: 100vw !important; }
+
   .hexagones, .bodyParcours, .bodyCarteVisite, .bodyOuvrages, .bodyMemory, .body3d, .bodyDiapo, .bodyMentions {
     min-height: 100vh !important;
+    min-width: unset;
+    max-width: 100vw;
     margin: unset;
     border-radius: unset; }
 
