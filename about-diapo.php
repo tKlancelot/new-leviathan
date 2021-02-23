@@ -6,8 +6,12 @@
     <?php include('head.php'); ?>
     <body>
         <div class="cadreLoader">
-            <div class="loader">loader</div>
+            <div class='cadreL'>
+                <p>chargement...</p>
+                <div class='myLoader'></div>
+            </div>
         </div>
+        
         <div class="body">
         <?php
         include('navbar.php');
