@@ -632,8 +632,7 @@ nav ul li:hover {
     border: unset; }
 
 .bodyMemory .cadreConteneur .cadreContent {
-  background-image: url("../assets/global/elephant-background.png");
-  background-color: #caebff;
+  background-image: url("../assets/intro-svg/background-bubble.svg");
   background-blend-mode: luminosity;
   background-size: cover;
   margin: auto;
@@ -797,8 +796,8 @@ nav ul li:hover {
   grid-gap: 22px;
   grid-template: none; }
   .sousPanneau button {
-    height: 48px;
-    width: 48px;
+    height: 36px;
+    width: 36px;
     background-position: center;
     background-size: cover;
     background-color: unset;

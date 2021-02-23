@@ -5,8 +5,7 @@
     border: unset; }
 
 .bodyMemory .cadreConteneur .cadreContent {
-  background-image: url("../assets/global/elephant-background.png");
-  background-color: #caebff;
+  background-image: url("../assets/intro-svg/background-bubble.svg");
   background-blend-mode: luminosity;
   background-size: cover;
   margin: auto;
