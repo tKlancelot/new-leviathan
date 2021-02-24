@@ -34,8 +34,8 @@
 .carte{
     display: flex;
     margin: auto;
-    width: 160px;
-    height: 200px;
+    width: 180px;
+    height: 220px;
     flex-basis: unset !important;
     background: unset;
     transition: all 0.6s !important;
@@ -65,7 +65,7 @@
 }
 
 .bandeBoutonDiapo{
-    justify-content: space-evenly;
+    justify-content: center;
     width: 100%;
     display: flex;
     min-height:4vh;
@@ -73,7 +73,7 @@
     background-color: var(--ceruleanAlt);
     button{
         flex-basis: auto;
-        margin:auto;
+        // margin:auto;
     }  
 }
 .playDiapo, .autoPlay, .boutonScrollTo{

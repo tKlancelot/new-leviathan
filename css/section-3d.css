@@ -34,7 +34,7 @@
 .panneauGauche, .panneauDroit {
   background-size: cover;
   background-position: center;
-  background-color: #95abdd;
+  background-color: var(--themaDark);
   background-blend-mode: luminosity; }
 
 .buttonA[disabled], .buttonB[disabled] {

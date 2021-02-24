@@ -27,8 +27,6 @@
 }
 
 .panneauGauche, .panneauDroit{
-    // border-left:1px solid var(--ceruleanAlt);
-    // border-right:1px solid var(--ceruleanAlt);
     flex-basis:6%;
     background:lightgrey;
     display: grid;
@@ -50,12 +48,7 @@
     // background-image:url('../assets/intro-svg/texture-3d.svg');
     background-size: cover;
     background-position: center;
-    // box-shadow:0px 0px 1px 1px #253ca3 inset,0px 0px 2px 2px #253ca3 inset,0px 0px 2px 2px #253ca3 inset!important;
-    // background: linear-gradient(to bottom, #455cc3,#455cc3, #455cc3, #556cd3, #657ce3,#758cf3,#657ce3, #556cd3, #556cd3, #455cc3, #455cc3, #354cb3);
-    // background:linear-gradient(45deg,#556cd3,#657ce3,#758cf3,#657ce3,#657ce3,#556cd3,#556cd3,#455cc3);
-    // background:linear-gradient(45deg,#51b6c8,#61c6d8,#61c6d8,#51b6c8);
-    // background:linear-gradient(45deg,#819fb0,#91afc0,#a1bfd0,#91afc0);
-    background-color:#95abdd;
+    background-color:var(--themaDark);
     // border-radius:4px;   
     background-blend-mode: luminosity;
     // background-blend-mode: hard-light;

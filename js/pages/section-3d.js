@@ -80,6 +80,7 @@ function createAllButtons(){
 
 createAllButtons();
 
+let boutonPaint = document.querySelector('.boutonA');
 btnToggleMurs = document.querySelector('.toggleMur');
 btnToggleToit = document.querySelector('.toggleToit');
 btnToggleCloison = document.querySelector('.toggleCloison');
@@ -186,7 +187,7 @@ function configFloor(){
     CreateAFloor(myFloor2,'./assets/ground.jpg',-0.02,12,12,myFloorArray);
     CreateAFloor(myFloor3,'./assets/rock-texture.jpg',-0.024,16,16,myFloorArray);
     CreateAFloor(myFloor4,'./assets/wooden-floor.jpg',-0.020,10,10,myFloorArray);
-    console.log(myFloorArray);
+    // console.log(myFloorArray);
 }
 
 
@@ -384,6 +385,25 @@ promise2.then((value) => {
     buttonA.removeAttribute('disabled');
 });
 
+let arrayButtons = [btnToggleSol,btnToggleToit,btnTogglePorte,btnToggleMurs,btnToggleFenetre,btnToggleCloison,boutonPaint];
+
+function disableButtons(){
+    for (let i = 0; i < arrayButtons.length;i++){
+        console.log(arrayButtons[i]);
+        arrayButtons[i].setAttribute('disabled','');
+        arrayButtons[i].style.opacity = "0";
+    }
+}
+
+function enableButtons(){
+    for (let i = 0; i < arrayButtons.length;i++){
+        // console.log(arrayButtons[i]);
+        arrayButtons[i].removeAttribute('disabled');
+        arrayButtons[i].style.opacity = "1";
+    }
+}
+
+
 buttonB.addEventListener("click",function(){
     supprimerTousLesObjets(myArray);
     scene.remove(myFloorArray[1]);
@@ -391,15 +411,16 @@ buttonB.addEventListener("click",function(){
     // scene.add(myFloorArray[2]);
     scene.add(myFloorArray[3]);
     houseRemoved = 1;
+    disableButtons();
 })
 
 buttonA.addEventListener("click",function(){
     if (houseRemoved == 1){
         supprimerTousLesObjets(scene2Array);
         ajouterTousLesObjets(myArray);
-        // scene.remove(myFloorArray[2]);
         scene.remove(myFloorArray[3]);
         scene.add(myFloorArray[1]);
         houseRemoved = 0;
+        enableButtons();
     }
 })

@@ -134,7 +134,7 @@ function CarteDeVisite(){
         source : './assets/intro-svg/logo-curiosite.svg',
         niveau : 100,
         numero : 9,
-        codeCouleur : "#6B7EB7"
+        codeCouleur : "#9caee6"
     }
 
     let objetScene11 = {
@@ -142,7 +142,7 @@ function CarteDeVisite(){
         source : './assets/intro-svg/logo-implication.svg',
         niveau : 100,
         numero : 10,
-        codeCouleur : "#6B7EB7"
+        codeCouleur : "#9caee6"
     }
 
     let objetScene12 = {
@@ -150,7 +150,7 @@ function CarteDeVisite(){
         source : './assets/intro-svg/logo-creativite.svg',
         niveau : 100,
         numero : 10,
-        codeCouleur : "#6B7EB7"
+        codeCouleur : "#9caee6"
     }
 
     let objetScene13 = {
@@ -158,7 +158,7 @@ function CarteDeVisite(){
         source : './assets/intro-svg/logo-rigueur.svg',
         niveau : 100,
         numero : 10,
-        codeCouleur : "#6B7EB7"
+        codeCouleur : "#9caee6"
     }
 
 

@@ -28,8 +28,8 @@
 .carte {
   display: flex;
   margin: auto;
-  width: 160px;
-  height: 200px;
+  width: 180px;
+  height: 220px;
   flex-basis: unset !important;
   background: unset;
   transition: all 0.6s !important;
@@ -52,15 +52,14 @@
   letter-spacing: 0.05rem; }
 
 .bandeBoutonDiapo {
-  justify-content: space-evenly;
+  justify-content: center;
   width: 100%;
   display: flex;
   min-height: 4vh;
   margin: auto;
   background-color: var(--ceruleanAlt); }
   .bandeBoutonDiapo button {
-    flex-basis: auto;
-    margin: auto; }
+    flex-basis: auto; }
 
 .playDiapo, .autoPlay, .boutonScrollTo {
   width: 48px;

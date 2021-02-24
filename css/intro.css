@@ -17,23 +17,23 @@
 .cadreL p {
   margin: auto;
   text-align: center;
-  color: var(--themaMedium);
+  color: var(--themaDarkest);
   font-family: 'Denk One';
-  opacity: 0.6; }
+  opacity: 0.7;
+  letter-spacing: 0.04rem;
+  text-transform: uppercase; }
 
 .myLoader {
   margin: -60% auto auto;
-  border: 12px solid #f3f3f3;
-  /* Light grey */
-  border-top: 12px solid #95abdd;
-  /* Blue */
+  border: 12px solid var(--themaLightest);
+  border-top: 12px solid var(--themaDark);
   border-radius: 50%;
   width: 120px;
   height: 120px;
   animation: spin 3s linear infinite; }
 
 .myLoader p {
-  color: red;
+  color: var(--themaDark);
   animation: none !important; }
 
 .hexagones, .bodyParcours, .bodyCarteVisite, .bodyOuvrages, .bodyMemory, .body3d, .bodyDiapo, .bodyMentions {

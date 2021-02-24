@@ -142,23 +142,23 @@ a {
 .cadreL p {
   margin: auto;
   text-align: center;
-  color: var(--themaMedium);
+  color: var(--themaDarkest);
   font-family: 'Denk One';
-  opacity: 0.6; }
+  opacity: 0.7;
+  letter-spacing: 0.04rem;
+  text-transform: uppercase; }
 
 .myLoader {
   margin: -60% auto auto;
-  border: 12px solid #f3f3f3;
-  /* Light grey */
-  border-top: 12px solid #95abdd;
-  /* Blue */
+  border: 12px solid var(--themaLightest);
+  border-top: 12px solid var(--themaDark);
   border-radius: 50%;
   width: 120px;
   height: 120px;
   animation: spin 3s linear infinite; }
 
 .myLoader p {
-  color: red;
+  color: var(--themaDark);
   animation: none !important; }
 
 .hexagones, .bodyParcours, .bodyCarteVisite, .bodyOuvrages, .bodyMemory, .body3d, .bodyDiapo, .bodyMentions {
@@ -797,7 +797,7 @@ nav ul li:hover {
 .panneauGauche, .panneauDroit {
   background-size: cover;
   background-position: center;
-  background-color: #95abdd;
+  background-color: var(--themaDark);
   background-blend-mode: luminosity; }
 
 .buttonA[disabled], .buttonB[disabled] {
@@ -900,8 +900,8 @@ nav ul li:hover {
 .carte {
   display: flex;
   margin: auto;
-  width: 160px;
-  height: 200px;
+  width: 180px;
+  height: 220px;
   flex-basis: unset !important;
   background: unset;
   transition: all 0.6s !important;
@@ -924,15 +924,14 @@ nav ul li:hover {
   letter-spacing: 0.05rem; }
 
 .bandeBoutonDiapo {
-  justify-content: space-evenly;
+  justify-content: center;
   width: 100%;
   display: flex;
   min-height: 4vh;
   margin: auto;
   background-color: var(--ceruleanAlt); }
   .bandeBoutonDiapo button {
-    flex-basis: auto;
-    margin: auto; }
+    flex-basis: auto; }
 
 .playDiapo, .autoPlay, .boutonScrollTo {
   width: 48px;
@@ -1039,7 +1038,7 @@ nav ul li:hover {
   font-family: "Denk One",cursive;
   letter-spacing: 0.16rem;
   text-decoration: underline;
-  text-decoration-thickness: 10px;
+  text-decoration-thickness: 7px;
   text-decoration-color: var(--themaDark);
   text-underline-offset: 6px;
   color: var(--themaDarkest);
