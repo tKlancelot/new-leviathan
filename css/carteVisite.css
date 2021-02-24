@@ -7,8 +7,7 @@
   border: unset; }
 
 .bodyCarteVisite .cadreConteneur .cadreContent {
-  background-image: url("../assets/intro-svg/background-bubble.svg");
-  background-blend-mode: hard-light; }
+  background-color: var(--themaMedium); }
 
 .flexColumn2 {
   flex-direction: column; }
@@ -25,11 +24,11 @@
   height: 6vh; }
   .myTitle h2 {
     color: white;
-    font-family: 'Yusei Magic';
+    font-family: 'Denk One',sans-serif;
     font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 0.16rem;
+    letter-spacing: 0.3rem;
     display: flex;
     margin: auto; }
 
@@ -52,11 +51,10 @@
     display: flex;
     width: 60%; }
     .cadreEmplacement div img {
-      transform: scale(0.5);
-      filter: opacity(0.8); }
+      transform: scale(0.5); }
 
 .divLevel {
-  filter: drop-shadow(#0007 0px 1px 0px); }
+  filter: drop-shadow(var(--themaUltraDark) 1px 1px 0px); }
 
 .textLevel {
   height: auto;
@@ -70,17 +68,15 @@
   font-size: 1rem; }
 
 .divLevel {
-  border: 2px solid var(--ceruleanAlt);
+  border: 2px solid var(--themaUltraDark);
   border-radius: 4px;
   margin: auto 2px !important;
   padding: 4px;
   background-color: #eef3ff; }
 
 .legendContent {
-  color: #333a;
-  opacity: 0.8;
   margin: auto;
-  font-family: 'Yusei Magic';
+  font-family: 'Lato',sans-serif;
   font-size: 1rem;
   letter-spacing: 0.02rem;
   padding: 16px;

@@ -1,19 +1,13 @@
 .bodyMentions{
     flex-direction: column;
     nav, .cadreConteneur .divContenu{
-        // background-color:#e6eaee;
-        // background-color:#9ca0a5;
-        // background-color:#c28fdf;
-        // background: linear-gradient(to right, #925faf,#a26fbf, #a26fbf, #a26fbf, #b27fcf, #c28fdf, #c28fdf, #c28fdf, #b27fcf, #a26fbf);
-        // background: linear-gradient(to right, #a26fbf,#b27fcf, #c28fdf, #b27fcf, #a26fbf);
-        background-color:#95abdd;
+        background-color:var(--themaDark);
         border:unset;
     }
 }
 
 .bodyMentions .cadreConteneur .cadreContent{
-    background-image:url('../assets/intro-svg/background-bubble.svg');
-    background-blend-mode: hard-light;
+    background-color:var(--themaMedium);
 }
 
 .scrollMention{
@@ -35,9 +29,9 @@
     letter-spacing: 0.16rem;
     text-decoration: underline;
     text-decoration-thickness: 8px;
-    text-decoration-color: #4444;
+    text-decoration-color: var(--themaDark);
     text-underline-offset: 8px;
-    color:#3338;
+    color: var(--themaDarkest);
     text-transform: uppercase;
 }
 
@@ -52,10 +46,10 @@
     li a{
         font-family: "Denk One",cursive;
         // color:white;
-        color:#3336;
-        transition: 0.5s;
+        color:white;
+        transition: 0.2s;
         &:hover{
-            color:#333c;
+            color:var(--themaDarkest);
         }
     }
 }
@@ -80,10 +74,9 @@
     }
     p{
         font-family: "Lato",sans-serif;
-        font-size:0.9rem;
-        letter-spacing: 0.02rem;
-        color:#333d;
-        // text-shadow:0px 0px #444,0px 0px 1px #222,0px 1px 1px #222;
+        font-size:0.96rem;
+        letter-spacing: 0.024rem;
+        color:var(--themaUltraDark);
         text-align: justify;
     }
 }

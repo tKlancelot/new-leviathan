@@ -1,25 +1,15 @@
 .bodyMemory{
     flex-direction: column;
     nav, .cadreConteneur .divContenu{
-        // background-color:#F0E0DE;
-        // background-color:#f1a198;
-        // background: linear-gradient(to right, #c47c21,#d48c31, #e49c41, #f4ac51, #f4ac51, #f4ac51, #e49c41, #d48c31, #c47c21, #c47c21);
-        // box-shadow:0px 0px 1px 1px #7ba6bf inset,0px 0px 2px 2px #7ba6bf inset,0px 0px 2px 2px #7ba6bf inset;
-        // background: linear-gradient(to right, #a26fbf,#b27fcf, #c28fdf, #b27fcf, #a26fbf);
-        background-color:#95abdd;
+        background-color:var(--themaDark);
         border:unset;
     }
 }
 
 
 .bodyMemory .cadreConteneur .cadreContent{
-    // background-image:url('../assets/global/mountains.jpg');
-    background-image:url('../assets/intro-svg/background-bubble.svg');
-    // background-color:#caebff;
-    background-blend-mode: luminosity;
+    background-color:var(--themaMedium);
     background-size: cover;
-    // animation: backgroundTranslate3 20s linear infinite;
-    // background-position:50% 102%;
     margin: auto;
     height: 512px;
     overflow: hidden;
@@ -46,7 +36,7 @@
 .myGrid2{
     width: 100%;
     border-radius: 4px;
-    margin: auto 20%;
+    margin: auto 26%;
     min-height: 48vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -95,7 +85,7 @@
     padding: 6px;
     display: flex;
     flex-direction: column;
-    background: var(--ceruleanLightest);
+    background: var(--themaDark);
 }
 
 .ensemble{

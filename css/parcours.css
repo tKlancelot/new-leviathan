@@ -5,7 +5,7 @@
     border: unset; }
 
 .bodyParcours .cadreConteneur .cadreContent {
-  background-color: #bbe6ff;
+  background-color: var(--themaMedium);
   background-blend-mode: hard-light; }
 
 .bodyParcours .divContenu {
@@ -54,11 +54,11 @@
   border-top-left-radius: 3%  50%;
   border-bottom-left-radius: 0.5%  49%; }
 
-.legend, .zoneTitre, .zoneNumero {
+.legend, .zoneTitre, .zoneNumero, .zoneNumeroGauche {
   text-align: justify;
   font-family: "Lato",serif;
   font-size: 1rem;
-  color: #444; }
+  color: #444 !important; }
 
 .zoneTitre {
   font-size: 1rem;

@@ -1,7 +1,7 @@
 .body3d {
   flex-direction: column; }
   .body3d nav, .body3d .cadreConteneur .divContenu {
-    background-color: #95abdd;
+    background-color: var(--themaDark);
     border: unset; }
 
 .body3d .cadreContent {

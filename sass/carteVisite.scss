@@ -3,12 +3,6 @@
     nav, .divContenu{
         // background:linear-gradient(to right,#657ce3,#657ce3,#758cf3,#657ce3);
         background: linear-gradient(to right, #a26fbf,#b27fcf, #c28fdf, #b27fcf, #a26fbf);
-        // background-color:#c3fff7;
-        // background:linear-gradient(to right,#1ba79b,#2bb7ab,#2bb7ab,#3bc7bb,#4bd7cb,#4bd7cb,#3bc7bb,#2bb7ab);
-        // background:linear-gradient(to right,#1b92a7,#1b92a7,#2ba2b7,#2ba2b7,#3bb2c7,#4bc2d7,#3bb2c7,#2ba2b7);
-        // background:linear-gradient(to right,#5872b0,#6882c0,#6882c0,#6882c0,#6882c0,#5872b0,#5872b0,#5872b0);
-        // background: radial-gradient(circle at 50%,#758cf3,#657ce3, #556cd3, #455cc3, #455cc3, #354cb3);
-        // background:linear-gradient(to left,#abc3ff96,#abc3ff86,#abc3ff76,#abc3ff66,#abc3ff46,#abc3ff56,#abc3ff76);
     }
 }
 
@@ -17,8 +11,7 @@
 }
 
 .bodyCarteVisite .cadreConteneur .cadreContent{
-    background-image:url('../assets/intro-svg/background-bubble.svg');
-    background-blend-mode: hard-light;
+    background-color:var(--themaMedium);
 }
 
 
@@ -42,11 +35,11 @@
     height: 6vh;
     h2{
         color: white;
-        font-family: 'Yusei Magic';
+        font-family: 'Denk One',sans-serif;
         font-size: 1.2rem;
         font-weight: bold;
         text-transform: uppercase;
-        letter-spacing: 0.16rem;
+        letter-spacing: 0.3rem;
         display: flex;
         margin: auto;
     }
@@ -80,15 +73,13 @@
         display: flex;
         width: 60%;
         img{
-            // width:64%;
             transform: scale(0.5);
-            filter: opacity(0.8);
         }
     }
 }
 
 .divLevel{
-    filter: drop-shadow(#0007 0px 1px 0px);
+    filter: drop-shadow(var(--themaUltraDark) 1px 1px 0px);
 }
 
 .textLevel{
@@ -104,7 +95,7 @@
 }
 
 .divLevel{
-    border:2px solid var(--ceruleanAlt);
+    border:2px solid var(--themaUltraDark);
     border-radius:4px;
     margin:auto 2px!important;
     padding:4px;
@@ -112,14 +103,11 @@
 }
 
 .legendContent{
-    color: #333a;
-    opacity: 0.8;
     margin:auto;
-    font-family: 'Yusei Magic';
+    font-family: 'Lato',sans-serif;
     font-size: 1rem;
     letter-spacing: 0.02rem;
     padding:16px;
-    // text-shadow: 0px 1px 0px #333a;
     width: 100%;
     box-sizing: border-box;
     text-align: center;

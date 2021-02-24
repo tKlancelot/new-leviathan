@@ -1,12 +1,11 @@
 .bodyMemory {
   flex-direction: column; }
   .bodyMemory nav, .bodyMemory .cadreConteneur .divContenu {
-    background-color: #95abdd;
+    background-color: var(--themaDark);
     border: unset; }
 
 .bodyMemory .cadreConteneur .cadreContent {
-  background-image: url("../assets/intro-svg/background-bubble.svg");
-  background-blend-mode: luminosity;
+  background-color: var(--themaMedium);
   background-size: cover;
   margin: auto;
   height: 512px;
@@ -26,7 +25,7 @@
 .myGrid2 {
   width: 100%;
   border-radius: 4px;
-  margin: auto 20%;
+  margin: auto 26%;
   min-height: 48vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr; }
@@ -67,7 +66,7 @@
   padding: 6px;
   display: flex;
   flex-direction: column;
-  background: var(--ceruleanLightest); }
+  background: var(--themaDark); }
 
 .ensemble {
   display: flex;

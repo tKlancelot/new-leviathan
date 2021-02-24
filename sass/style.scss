@@ -16,13 +16,13 @@ a{
 }
 
 :root{
-    --ceruleanAlt: #3c5480; 
-    --cerulean: #4A72DE; 
-    --ceruleanLightest: #8BB3FF; 
-    --ceruleanUltraLight: #aBc3FF; 
-    --ceruleanAltLight: #e2eaff; 
-    --ceruleanDark: #2A52BE; 
-    --ceruleanUltraDark: #0e286e; 
+    --themaUltraDark: #6B7EB7; 
+    --themaDarkest: #7C8FC7; 
+    --themaDark: #9caee6; 
+    --themaMedium: #ccd7f9; 
+    --themaLight: #E8F4FF; 
+    --themaLightest: #F9FCFF; 
+    --themaTransp: #6B7EB796; 
 }
 
 @import "fonts.scss";

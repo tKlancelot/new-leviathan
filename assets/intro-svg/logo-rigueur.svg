@@ -1,7 +1,7 @@
 <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="18.3003" y="20.7" width="57" height="57" stroke="#444444" stroke-width="3" stroke-miterlimit="2.3662" stroke-linejoin="round"/>
-<circle cx="46.7997" cy="49.2" r="26.1" stroke="#444444" stroke-width="3" stroke-miterlimit="2.3662" stroke-linejoin="round"/>
-<path d="M24.5968 41.3857L46.8001 25.2541L69.0034 41.3857L60.5225 67.4872H33.0777L24.5968 41.3857Z" stroke="#444444" stroke-width="3" stroke-miterlimit="2.3662" stroke-linejoin="round"/>
-<line x1="47.1001" y1="8.33248e-08" x2="47.1001" y2="96" stroke="#444444" stroke-width="3" stroke-miterlimit="2.3662" stroke-linejoin="round"/>
-<line x1="96" y1="49.5" x2="-1.31134e-07" y2="49.5" stroke="#444444" stroke-width="3" stroke-miterlimit="2.3662" stroke-linejoin="round"/>
+<rect x="18.3003" y="20.7" width="57" height="57" stroke="#F9FCFF" stroke-width="3" stroke-miterlimit="2.3662" stroke-linejoin="round"/>
+<circle cx="46.7997" cy="49.2" r="26.1" stroke="#F9FCFF" stroke-width="3" stroke-miterlimit="2.3662" stroke-linejoin="round"/>
+<path d="M24.5968 41.3857L46.8001 25.2541L69.0034 41.3857L60.5225 67.4872H33.0777L24.5968 41.3857Z" stroke="white" stroke-width="3" stroke-miterlimit="2.3662" stroke-linejoin="round"/>
+<line x1="47.1001" y1="1.07628e-07" x2="47.1001" y2="96" stroke="white" stroke-width="3" stroke-miterlimit="2.3662" stroke-linejoin="round" stroke-dasharray="8 0"/>
+<line x1="96" y1="49.5" x2="-1.31134e-07" y2="49.5" stroke="white" stroke-width="3" stroke-miterlimit="2.3662" stroke-linejoin="round" stroke-dasharray="4 0"/>
 </svg>

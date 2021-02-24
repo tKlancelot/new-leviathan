@@ -19,7 +19,7 @@
 }
 
 .bodyParcours .cadreConteneur .cadreContent{
-    background-color:#bbe6ff;
+    background-color: var(--themaMedium);
     background-blend-mode: hard-light;
 }
 
@@ -53,7 +53,6 @@
 
 .pageGauche, .pageDroite{
     border: 1px solid #444;
-    // min-height: 100%;
     flex-basis: 50%;
     border-bottom: 1px solid #444;
     display: flex;
@@ -91,21 +90,17 @@
     border-bottom-left-radius: 0.5%  49%;
 }
 
-.legend, .zoneTitre, .zoneNumero{
+.legend, .zoneTitre, .zoneNumero, .zoneNumeroGauche{
     text-align: justify;
-    // font-family: "Denk One",cursive;
-    // font-family: "Yusei Magic",cursive;
     font-family: "Lato",serif;
     font-size: 1rem;
-    color:#444;
+    color:#444!important;
 }
 
 .zoneTitre{
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    // height:6vh;
-    // background:red;
     align-self: center;
     justify-self: center;
     justify-content: center;

@@ -59,12 +59,12 @@ function diapoTarik(){
     
     bandeBtnDiapo.append(boutonAuto);
     bandeBtnDiapo.append(boutonSwitch);
-
+    cadreContent.append(bandeBtnDiapo);
+    
     
     cadreContent.append(paraTitre);
     cadreContent.append(monParagraphe);
     cadreContent.append(cadre);
-    cadreContent.append(bandeBtnDiapo);
     
 
 

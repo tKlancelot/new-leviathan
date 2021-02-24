@@ -1,13 +1,14 @@
 .bodyDiapo {
   flex-direction: column; }
   .bodyDiapo nav, .bodyDiapo .cadreConteneur .divContenu {
-    background-color: #95abdd; }
+    background-color: var(--themaDark); }
 
 .bodyDiapo .cadreContent {
-  flex-direction: column; }
+  flex-direction: column;
+  background-color: var(--themaDark); }
 
 .cadreContent h4, .cadreContent p {
-  color: #222e; }
+  color: white; }
 
 .cadre {
   width: 100%;
@@ -17,14 +18,18 @@
   margin: auto auto 0;
   justify-content: center;
   background-size: 100%;
-  background-position: 25% 100%;
+  background-position: center 101%;
   background-repeat: no-repeat; }
+
+.myContent .legendContent {
+  color: var(--themaDarkest);
+  font-family: "Denk One",cursive; }
 
 .carte {
   display: flex;
   margin: auto;
-  width: 200px;
-  height: 240px;
+  width: 160px;
+  height: 200px;
   flex-basis: unset !important;
   background: unset;
   transition: all 0.6s !important;
@@ -51,8 +56,8 @@
   width: 100%;
   display: flex;
   min-height: 4vh;
-  margin: 0 auto auto;
-  background-color: #95abdd; }
+  margin: auto;
+  background-color: var(--ceruleanAlt); }
   .bandeBoutonDiapo button {
     flex-basis: auto;
     margin: auto; }

@@ -1,12 +1,11 @@
 .bodyMentions {
   flex-direction: column; }
   .bodyMentions nav, .bodyMentions .cadreConteneur .divContenu {
-    background-color: #95abdd;
+    background-color: var(--themaDark);
     border: unset; }
 
 .bodyMentions .cadreConteneur .cadreContent {
-  background-image: url("../assets/intro-svg/background-bubble.svg");
-  background-blend-mode: hard-light; }
+  background-color: var(--themaMedium); }
 
 .scrollMention {
   overflow-y: scroll;
@@ -24,9 +23,9 @@
   letter-spacing: 0.16rem;
   text-decoration: underline;
   text-decoration-thickness: 8px;
-  text-decoration-color: #4444;
+  text-decoration-color: var(--themaDark);
   text-underline-offset: 8px;
-  color: #3338;
+  color: var(--themaDarkest);
   text-transform: uppercase; }
 
 .chapter {
@@ -38,10 +37,10 @@
   margin: auto 10%; }
   .chapter li a {
     font-family: "Denk One",cursive;
-    color: #3336;
-    transition: 0.5s; }
+    color: white;
+    transition: 0.2s; }
     .chapter li a:hover {
-      color: #333c; }
+      color: var(--themaDarkest); }
 
 .boutonScrollTo {
   position: absolute;
@@ -59,9 +58,9 @@
     opacity: 1; }
   .maDiv p {
     font-family: "Lato",sans-serif;
-    font-size: 0.9rem;
-    letter-spacing: 0.02rem;
-    color: #333d;
+    font-size: 0.96rem;
+    letter-spacing: 0.024rem;
+    color: var(--themaUltraDark);
     text-align: justify; }
 
 .maDiv h3 + p {

@@ -22,7 +22,7 @@
 .cadreL p{
     margin:auto;
     text-align: center;
-    color:#627090;
+    color:var(--themaMedium);
     font-family: 'Denk One';
     opacity: 0.6;
 }
@@ -142,7 +142,7 @@
 .loader{
     margin:auto;
     display: flex;
-    border:1px solid var(--ceruleanAlt);
+    border:1px solid var(--themaDark);
     padding:8px;
 }
 
@@ -174,9 +174,9 @@
     border-width: 1px;
     transform: rotateX(60deg);
     border-style: solid;
-    filter: drop-shadow(1px 1px 0px var(--ceruleanUltraDark));
+    filter: drop-shadow(1px 1px 0px var(--themaDark));
     &:hover{
-        border-color:var(--ceruleanDark);
+        border-color:var(--themaDark);
     }
 }
 
@@ -278,11 +278,11 @@
 
 .panneauBoutonChoix{
     color:white;
-    border:3px solid var(--ceruleanDark);
+    border:3px solid #8f9dc5;
     height: 100px;
     border-radius:4px;
     width:100px;
-    background-color:var(--ceruleanLightest);
+    background-color:#a8b6db;
     padding:2px;
     display: flex;
     margin: auto auto;
