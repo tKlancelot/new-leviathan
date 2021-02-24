@@ -5,10 +5,10 @@
 
 .bodyDiapo .cadreContent {
   flex-direction: column;
-  background-color: var(--themaDark); }
+  background-color: var(--themaMedium); }
 
 .cadreContent h4, .cadreContent p {
-  color: white; }
+  color: var(--themaDarkest); }
 
 .cadre {
   width: 100%;

@@ -2,8 +2,8 @@
 <path d="M11.374 8.37341H29.1731V16.9763V21.5002H23.0916V29.8806H29.1731V34.182V42.7849H11.374V8.37341Z" fill="white"/>
 <path d="M10.1866 6.00013L9 6V42.7848H10.1866V7.18673H30.3589V21.5H31.5455V6.00013H30.3589H10.1866Z" fill="white"/>
 <path d="M30.3589 42.7848H31.5455V29.9324H30.3589V42.7848Z" fill="white"/>
-<rect x="13.9961" y="10.9963" width="4.24641" height="6.61962" fill="#84A3F7" stroke="white" stroke-width="0.5"/>
-<rect x="22.3027" y="10.9963" width="4.24641" height="6.61962" fill="#84A3F7" stroke="white" stroke-width="0.5"/>
-<circle cx="15.526" cy="27.952" r="1.5299" fill="#84A3F7" stroke="white" stroke-width="0.5"/>
-<path d="M33.2156 22.6482H25.0742V28.3889H33.2156L33.2156 31.2593L40.0001 25.5186L33.2156 19.7778V22.6482Z" fill="#84A3F7"/>
+<rect x="13.9961" y="10.9963" width="4.24641" height="6.61962" fill="#9CAEE6" stroke="white" stroke-width="0.5"/>
+<rect x="22.3027" y="10.9963" width="4.24641" height="6.61962" fill="#9CAEE6" stroke="white" stroke-width="0.5"/>
+<circle cx="15.526" cy="27.952" r="1.5299" fill="#9CAEE6" stroke="white" stroke-width="0.5"/>
+<path d="M33.2156 22.6482H25.0742V28.3889H33.2156L33.2156 31.2593L40.0001 25.5186L33.2156 19.7778V22.6482Z" fill="white"/>
 </svg>

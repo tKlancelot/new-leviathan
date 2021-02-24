@@ -278,11 +278,11 @@
 
 .panneauBoutonChoix{
     color:white;
-    border:3px solid #8f9dc5;
+    border: 3px solid var(--themaDarkest);
     height: 100px;
     border-radius:4px;
     width:100px;
-    background-color:#a8b6db;
+    background-color:var(--themaDark);
     padding:2px;
     display: flex;
     margin: auto auto;
@@ -292,7 +292,7 @@
         font-family: 'Denk One',cursive;
         color: var(--ceruleanDark);
         padding:4px;
-        background: aliceblue;
+        background: var(--themaMedium);
     }
 }
 
