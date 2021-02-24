@@ -10,3 +10,16 @@
     background-color: var(--themaMedium);
     background-blend-mode: hard-light;
 }
+
+.bodyOuvrages .cadreConteneur .cadreContent .divStat{
+    padding:1.2rem;
+}
+
+.divStat a{
+    color:var(--themaLightest);
+    font-family: "Lato",sans-serif;
+    text-transform: uppercase;
+    &:hover{
+        color:var(--themaUltraDark);
+    }
+}

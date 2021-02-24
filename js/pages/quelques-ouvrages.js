@@ -29,6 +29,20 @@ function Ouvrages(){
     contenu.classList = "divContenu";
     paraLegend.textContent = objetOuvrage.description;
     GriserLi(objetOuvrage);
+
+    let cadreContent = document.querySelector('.cadreContent');
+    let myCv = document.createElement('a');
+    myCv.href = "./assets/download/new-cv-tarik.pdf";
+    myCv.download = "monCv";
+    myCv.textContent = "télécharger mon cv";
+    console.log(myCv);
+    
+    let divStat = document.createElement('div');
+    divStat.classList = "divStat";
+    cadreContent.append(divStat);
+    divStat.append(myCv);
+
+
 };
 
 Ouvrages();
