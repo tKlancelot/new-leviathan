@@ -13,8 +13,10 @@
 .divStat a {
   color: var(--themaLightest);
   font-family: "Lato",sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: 0.02rem; }
   .divStat a:hover {
-    color: var(--themaUltraDark); }
+    color: white;
+    text-shadow: 0px 0px 1px white, 0px 0px 4px white; }
 
 /*# sourceMappingURL=quelques-ouvrages.css.map */

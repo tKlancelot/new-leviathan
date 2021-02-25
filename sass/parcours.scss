@@ -98,14 +98,16 @@
 }
 
 .zoneTitre{
-    font-size: 1rem;
+    font-size: 1.6rem;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     align-self: center;
     justify-self: center;
+    font-weight: bold;
     justify-content: center;
-    margin:2vh 0 auto;
-    border-bottom:1px solid #444;
+    margin: 2vh 0 auto;
+    font-family: 'Suravaram';
+    opacity: 0.40;
 }
 
 

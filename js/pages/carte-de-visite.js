@@ -70,7 +70,7 @@ function CarteDeVisite(){
         source : './assets/intro-svg/logo-css.svg',
         niveau : 86,
         numero : 1,
-        codeCouleur : "#489BD6"
+        codeCouleur : "#2965F1"
     }
 
     let objetScene3 = {
@@ -78,7 +78,7 @@ function CarteDeVisite(){
         source : './assets/intro-svg/logo-js.svg',
         niveau : 82,
         numero : 2,
-        codeCouleur : "#DEC700"
+        codeCouleur : "#f5dc0b"
     }
 
     let objetScene4 = {

@@ -7,13 +7,13 @@
   flex-direction: column;
   background-color: var(--themaMedium); }
 
-.cadreContent h4, .cadreContent p {
+.bodyDiapo .cadreContent h4, .bodyDiapo .cadreContent p {
   color: var(--themaDarkest); }
 
 .cadre {
   width: 100%;
   max-width: 100%;
-  height: 400px;
+  height: 360px;
   display: flex;
   margin: auto auto 0;
   justify-content: center;
@@ -36,20 +36,22 @@
   border-radius: 10px; }
 
 .paraTitre1 {
-  font-family: 'Swanky and Moo Moo', sans-serif;
+  font-family: 'Denk One', sans-serif;
   width: auto;
   margin: auto;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 1.6rem;
-  letter-spacing: 0.06rem; }
+  font-size: 1.4rem;
+  letter-spacing: 0.08rem;
+  color: var(--themaTransp) !important; }
 
 .monParagraphe {
   font-family: 'Lato', sans-serif;
-  margin: auto;
-  font-size: 0.94rem;
+  margin: auto 8%;
+  font-size: 0.98rem;
   text-align: center;
-  letter-spacing: 0.05rem; }
+  letter-spacing: 0.04rem;
+  height: 6vh; }
 
 .bandeBoutonDiapo {
   justify-content: center;
@@ -62,14 +64,18 @@
     flex-basis: auto; }
 
 .playDiapo, .autoPlay, .boutonScrollTo {
-  width: 48px;
-  height: 48px;
+  width: 54px;
+  height: 54px;
   background-repeat: no-repeat;
   background: unset;
   background-size: cover;
   border: none;
   transition: 0.5s;
   cursor: pointer; }
+
+.boutonScrollTo {
+  width: 48px;
+  height: 48px; }
 
 .playDiapo {
   background-image: url("../assets/intro-svg/icon-play-diapo.svg"); }

@@ -19,7 +19,9 @@
     color:var(--themaLightest);
     font-family: "Lato",sans-serif;
     text-transform: uppercase;
+    letter-spacing: 0.02rem;
     &:hover{
-        color:var(--themaUltraDark);
+        color:white;
+        text-shadow: 0px 0px 1px white, 0px 0px 4px white;
     }
 }

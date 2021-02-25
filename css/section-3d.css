@@ -38,8 +38,7 @@
   background-blend-mode: luminosity; }
 
 .buttonA[disabled], .buttonB[disabled] {
-  opacity: 0.4;
-  filter: grayscale(1); }
+  opacity: 0; }
 
 .buttonA, .buttonB {
   background: radial-gradient(circle, #4C57bF, #5C67CF, #7C87eF);

@@ -130,7 +130,7 @@
     // background: #4A72DEf6;
     p{
         margin: auto;
-        color:#4A72DEf6;
+        color:var(--themaUltraDark);
         font-size: 1rem;
         font-family: "Denk One",cursive;
     }
@@ -279,20 +279,20 @@
 
 
 .panneauBoutonChoix{
-    color:white;
-    border: 3px solid var(--themaDarkest);
+    color: white;
+    border: 3px solid var(--themaDark);
     height: 100px;
-    border-radius:4px;
-    width:100px;
-    background-color:var(--themaDark);
-    padding:2px;
+    border-radius: 4px;
+    width: 100px;
+    background-color: var(--themaDark);
+    padding: 4px;
     display: flex;
     margin: auto auto;
     flex-direction: column;
     button{
         margin:auto;
         font-family: 'Denk One',cursive;
-        color: var(--ceruleanDark);
+        color: var(--themaUltraDark);
         padding:4px;
         background: var(--themaMedium);
     }
