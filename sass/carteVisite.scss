@@ -73,7 +73,8 @@
         display: flex;
         width: 60%;
         img{
-            transform: scale(0.54);
+            transform: scale(0.48);
+            filter: saturate(0.64);
         }
     }
 }

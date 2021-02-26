@@ -50,7 +50,8 @@
     display: flex;
     width: 60%; }
     .cadreEmplacement div img {
-      transform: scale(0.54); }
+      transform: scale(0.48);
+      filter: saturate(0.64); }
 
 .divLevel {
   filter: drop-shadow(var(--themaUltraDark) 1px 1px 0px); }

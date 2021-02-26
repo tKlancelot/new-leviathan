@@ -23,7 +23,7 @@
   letter-spacing: 0.16rem;
   text-decoration: underline;
   text-decoration-thickness: 7px;
-  text-decoration-color: var(--themaDark);
+  text-decoration-color: #a6b7ee;
   text-underline-offset: 6px;
   color: var(--themaDarkest);
   text-transform: uppercase; }

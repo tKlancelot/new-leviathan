@@ -106,10 +106,10 @@ function diapoTarik(){
 
     let objScene1 = new ObjScene('à propos de moi','Passionné de développement web, je souhaiterais mettre ma rigueur et mon goût pour le travail bien fait au service de votre entreprise.',scene1,'assets/intro-svg/decor-1.svg');
     let objScene2 = new ObjScene('créativité','Des idées et des projets originaux 365jours/an',scene2,'assets/intro-svg/decor-1.svg');
-    let objScene3 = new ObjScene('boîte à outils','Mes librairies de prédilection et le langage javascript',scene3,'assets/intro-svg/decor-3.svg');
+    let objScene3 = new ObjScene('boîte à outils','Mes librairies de prédilection et le langage javascript',scene3,'assets/intro-svg/decor-1.svg');
     let objScene4 = new ObjScene('Responsive Websites','Concevoir des sites et des applications qui s\'adaptent au périphérique de l\'utilisateur',scene4,'assets/intro-svg/decor-1.svg');
-    let objScene5 = new ObjScene('Design','Je contribue à une expérience utilisateur unique en réalisant des logos sur figma, mon nouveau meilleur ami :)',scene5,'assets/intro-svg/decor-3.svg');
-    let objScene6 = new ObjScene('environnement','Quelques-uns de mes outils favoris',scene6,'assets/intro-svg/decor-4.svg');
+    let objScene5 = new ObjScene('Design','Je contribue à une expérience utilisateur unique en réalisant des logos sur figma, mon nouveau meilleur ami :)',scene5,'assets/intro-svg/decor-1.svg');
+    let objScene6 = new ObjScene('environnement','Quelques-uns de mes outils favoris',scene6,'assets/intro-svg/decor-1.svg');
 
     let objSceneArray = [objScene1,objScene2,objScene3,objScene4,objScene5,objScene6];
 

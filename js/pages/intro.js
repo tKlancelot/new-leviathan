@@ -46,7 +46,7 @@ let srcArray = ['icon-library.svg','icon-ouvrage.svg','icon-play-cards.svg','ico
 let iconHoverArray = ["icon-library-hover.svg","icon-ouvrage-hover.svg","icon-play-cards-hover.svg","icon-carte-visite-hover.svg","","icon-3d-hover.svg","icon-diapo-hover.svg","icon-mentions-hover.svg","icon-exit-hover.svg"];
 let infobulleArray = [
     "mon parcours en quelques pages!",
-    "quelques ouvrages",
+    "contacts",
     "jeu de carte",
     "ma carte de visite !",
     "",

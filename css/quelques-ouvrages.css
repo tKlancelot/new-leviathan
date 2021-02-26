@@ -5,7 +5,13 @@
 
 .bodyOuvrages .cadreConteneur .cadreContent {
   background-color: var(--themaMedium);
-  background-blend-mode: hard-light; }
+  background-blend-mode: hard-light;
+  flex: unset;
+  flex-direction: column; }
+
+.bodyOuvrages .cadreConteneur {
+  margin: 0 4px;
+  flex: 0; }
 
 .bodyOuvrages .cadreConteneur .cadreContent .divStat {
   padding: 1.2rem; }
@@ -18,5 +24,119 @@
   .divStat a:hover {
     color: white;
     text-shadow: 0px 0px 1px white, 0px 0px 4px white; }
+
+.listOuvrage, .journal {
+  border: 0px solid blue;
+  margin: 0 auto;
+  display: flex; }
+
+.contentOuvrage {
+  margin: 0;
+  border: 0px solid #f6f9ff;
+  flex-wrap: wrap;
+  display: flex; }
+
+.carre {
+  height: 258px;
+  width: 258px;
+  display: flex; }
+
+.pCarre {
+  height: 80px;
+  width: 120px;
+  margin: auto;
+  border-radius: 8px;
+  transition: 4s;
+  display: flex;
+  font-family: "Lato",sans-serif;
+  justify-content: center;
+  align-items: center; }
+  .pCarre p, .pCarre a {
+    display: flex;
+    text-align: center; }
+    .pCarre p:hover, .pCarre a:hover {
+      color: black; }
+
+.journal {
+  height: 258px; }
+
+.contentJournal {
+  width: 364px;
+  height: 120px;
+  background-color: #f6f9ff;
+  margin: auto;
+  border-radius: 6px;
+  padding: 8px; }
+
+.section-php > p:first-child {
+  font-style: italic;
+  color: red; }
+
+.section-php input {
+  margin: 0.16rem auto; }
+
+table,
+td {
+  border: 1px solid #333;
+  border-spacing: 1px;
+  padding: 4px; }
+
+.specialLink {
+  cursor: pointer; }
+
+#elem0, #elem1, #elem2, #elem3 {
+  width: 60px;
+  height: 60px;
+  transition: 0.5s;
+  opacity: 0.58; }
+  #elem0:hover, #elem1:hover, #elem2:hover, #elem3:hover {
+    opacity: 1; }
+
+#elem0 {
+  background-image: url("../assets/intro-svg/click-cv.svg"); }
+  #elem0:hover {
+    background-image: url("../assets/intro-svg/click-cv-hover.svg"); }
+
+#elem1 {
+  background-image: url("../assets/intro-svg/click-email.svg"); }
+  #elem1:hover {
+    background-image: url("../assets/intro-svg/click-email-hover.svg"); }
+
+#elem2 {
+  background-image: url("../assets/intro-svg/click-telephone.svg"); }
+  #elem2:hover {
+    background-image: url("../assets/intro-svg/click-telephone-hover.svg"); }
+
+#elem3 {
+  background-image: url("../assets/intro-svg/click-linkedin.svg"); }
+  #elem3:hover {
+    background-image: url("../assets/intro-svg/click-linkedin-hover.svg"); }
+
+.bullesContact {
+  position: absolute;
+  margin-top: -136px;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  display: flex;
+  border: 2px solid #F6F9FF;
+  width: 118px;
+  height: 36px;
+  background-color: #F6F9FF;
+  font-size: 0.84rem;
+  text-align: center;
+  font-family: "Denk One",cursive;
+  color: var(--themaDark);
+  border-radius: 4px;
+  opacity: 0.72; }
+
+.headJournal h4 {
+  font-family: "Denk One";
+  text-transform: uppercase;
+  color: var(--themaTransp);
+  font-size: 1.4rem;
+  font-weight: normal;
+  opacity: 0.8;
+  letter-spacing: 0.04rem; }
 
 /*# sourceMappingURL=quelques-ouvrages.css.map */
