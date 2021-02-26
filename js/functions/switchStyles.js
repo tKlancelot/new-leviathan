@@ -11,7 +11,7 @@ export default function SwitchStyles(bouton,elemNav,elemContent,elem3){
     console.log(elemDom);
 
     let tableauStyle = [
-        "linear-gradient(to left, #9AACE1,#9AACE1)",
+        "linear-gradient(to left, #a8baf2,#a8baf2)",
         "linear-gradient(to right, #a26fbf,#b27fcf, #c28fdf, #b27fcf, #a26fbf)",
         "linear-gradient(to right, #51b6c8,#61c6d8, #61c6d8, #51b6c8, #51b6c8)",
         "linear-gradient(to right, #455cc3,#556cd3, #556cd3, #455cc3, #354cb3)",
