@@ -135,6 +135,47 @@
         width:100vw;
     }
 
+    .bodyOuvrages .cadreConteneur{
+        width: 100vw;
+        max-width: 100vw;
+        margin:0!important;
+    }
+
+    .bodyOuvrages .cadreConteneur .cadreContent{
+        height: 82vh;
+    }
+
+    .listOuvrage{
+        width:100%;
+        display: flex;
+        height: 100%;
+
+    }
+
+    .contentOuvrage{
+        width: 100%;
+    }
+
+    .carre{
+        // width: 50%;
+        // height:50%;
+        margin:auto;
+        width: 50%;
+        height: auto;
+        .pCarre{
+            height: auto;
+        }
+    }
+
+    .journal{
+        height: 50%;
+        display: flex;
+        .contentJournal{
+            width: 200px;
+            height: auto;
+        }
+    }
+
     .bgBobines{
         animation: unset;
         height: unset;
@@ -642,5 +683,38 @@
 
     .panneauGauche, .panneauDroit{
         background: var(--themaDark);
+    }
+
+    .bodyOuvrages .cadreConteneur{
+        width: 100vw;
+        max-width: 100vw;
+        margin:0!important;
+    }
+
+    .bodyOuvrages .cadreConteneur .cadreContent{
+        height: 88vh;
+    }
+
+    .listOuvrage{
+        width:100%;
+        display: flex;
+        height: 50%;
+    }
+
+    .contentOuvrage{
+        width: 100%;
+    }
+
+    .carre{
+        width: 50%;
+        height:50%;
+    }
+
+    .journal{
+        height: 50%;
+        display: flex;
+        .contentJournal{
+            width: 200px;
+        }
     }
 }
