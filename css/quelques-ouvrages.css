@@ -37,12 +37,12 @@
   display: flex; }
 
 .carre {
-  height: 258px;
+  height: 160px;
   width: 258px;
   display: flex; }
 
 .pCarre {
-  height: 80px;
+  height: 120px;
   width: 120px;
   margin: auto;
   border-radius: 8px;
@@ -58,26 +58,26 @@
       color: black; }
 
 .journal {
-  height: 258px; }
+  height: 352px;
+  width: 100%;
+  display: flex; }
 
 .contentJournal {
-  width: 364px;
-  height: 120px;
+  width: 85%;
+  height: 280px;
   background-color: #f6f9ff;
   margin: auto;
   border-radius: 6px;
-  padding: 8px; }
+  padding: 8px;
+  display: flex;
+  flex-direction: column; }
 
 .section-php > p:first-child {
   font-style: italic;
   color: red; }
 
-.section-php input {
-  margin: 0.16rem auto; }
-
 table,
 td {
-  border: 1px solid #333;
   border-spacing: 1px;
   padding: 4px; }
 
@@ -114,7 +114,7 @@ td {
 
 .bullesContact {
   position: absolute;
-  margin-top: -136px;
+  margin-top: 168px;
   align-items: center;
   align-self: center;
   justify-content: center;
@@ -134,9 +134,102 @@ td {
   font-family: "Denk One";
   text-transform: uppercase;
   color: var(--themaTransp);
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: normal;
   opacity: 0.8;
-  letter-spacing: 0.04rem; }
+  letter-spacing: 0.06rem;
+  margin-top: -4%; }
+
+.section-php {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center; }
+
+.section-php form {
+  display: flex;
+  flex-wrap: wrap; }
+  .section-php form .row {
+    margin: 4px 8px 2px 0px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between; }
+    .section-php form .row input {
+      width: auto;
+      padding: 4px; }
+    .section-php form .row input:first-child {
+      width: 80%;
+      margin-right: 4px; }
+  .section-php form .row2 {
+    flex-basis: 100%;
+    margin: 2px 8px auto 0px;
+    display: flex; }
+    .section-php form .row2 textarea {
+      flex-basis: 75%;
+      margin: auto 4px auto auto;
+      padding: 2px 4px;
+      font-family: "lato",cursive; }
+    .section-php form .row2 input {
+      flex-basis: 25%;
+      margin: 0px auto; }
+
+.liste-commentaire {
+  margin: 8px auto auto auto;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--themaMedium);
+  border: unset;
+  border-radius: 4px;
+  width: 100%; }
+  .liste-commentaire tbody {
+    width: auto; }
+    .liste-commentaire tbody tr {
+      width: 100%;
+      display: flex;
+      font-family: "Lato",sans-serif;
+      color: var(--themaDarkest); }
+
+.comm {
+  width: 100%;
+  margin: auto;
+  color: var(--themaUltraDark); }
+
+.pseudo {
+  width: 100%;
+  margin: auto;
+  padding: 4px;
+  font-size: 0.96rem; }
+
+.thePseudo {
+  color: #4c8; }
+
+.panneauComm {
+  margin: 8px 12px;
+  box-sizing: content-box;
+  padding: 12px;
+  background-color: var(--themaLightest); }
+
+.contentJournal {
+  overflow-y: scroll; }
+
+::-webkit-scrollbar {
+  visibility: hidden; }
+
+.myConsole {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  padding: 1rem auto; }
+  .myConsole p {
+    width: 86.5%;
+    background-color: var(--themaLightest);
+    margin: auto;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    border-radius: 4px 4px 0px 0px;
+    font-style: oblique;
+    font-family: "Lato",cursive;
+    font-size: 0.9rem;
+    text-indent: 1rem; }
 
 /*# sourceMappingURL=quelques-ouvrages.css.map */

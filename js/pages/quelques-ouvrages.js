@@ -123,7 +123,7 @@ function Ouvrages(){
     }
     
     
-    createJournal("à propos",journal);
+    createJournal("laissez un commentaire",journal);
     
     let bulle1,bulle2,bulle3,bulle4;
     let tableauBulle = [bulle1,bulle2,bulle3,bulle4];
@@ -150,6 +150,9 @@ function Ouvrages(){
     
     mouseOverOut();
 
+    let myConsole = document.querySelector('.console-erreur');
+    myConsole.classList ="myConsole";
+    cadreContent.append(myConsole);
 
 
     //promesses js
