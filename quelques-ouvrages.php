@@ -57,7 +57,7 @@
                         if(strlen($pseudo) < 10){
                             $msg = "ok on continue";
                             if(strlen($commentaire)<1000){
-                                $msg = "<span style='color:green'>ok ça marche</span>";
+                                $msg = "<span style='color:#4c8'>votre commentaire a bien été posté</span>";
                                 $req = $bdd->prepare('INSERT INTO commentaires (pseudo, commentaire, dateEnvoi) VALUES (?,?,?)');
                                 $req->execute(array($pseudo,$commentaire,$datePost));
                                 // var_dump($req);
@@ -80,7 +80,7 @@
             ?>
 
             <table class="liste-commentaire">
-                <?php $reponse = $bdd->query('SELECT * FROM commentaires');
+                <?php $reponse = $bdd->query('SELECT * FROM commentaires ORDER BY dateEnvoi ASC');
                 while ($donnees = $reponse->fetch()){
                 ?>
                 <tbody class="panneauComm">
