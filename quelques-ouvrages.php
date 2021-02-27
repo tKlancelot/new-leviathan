@@ -1,16 +1,12 @@
 <?php
-	// $bdd = new PDO('mysql:host=127.0.0.1;dbname=espace-commentaire;charset=utf8','root','root');
+	// $bdd = new PDO('mysql:host=127.0.0.1;dbname=espace-commentaire;charset=utf8','root','root');    
 	$bdd = new PDO('mysql:host=db5001841472.hosting-data.io;dbname=dbs1514150;charset=utf8','dbu253495','!a8tAm9Rx792A8CD%');
 ?>
 
 
 <?php
-    // function logComment($element){
-    //     if(isset($_POST[$element])AND !(empty($_POST[$element]))){
-    //         $post = $_POST[$element];
-    //         // var_dump($post);
-    //     }
-    // }
+    session_start();
+    echo $_SESSION['role'];
 ?>
 
 <!DOCTYPE html>
@@ -57,7 +53,7 @@
                         if(strlen($pseudo) < 10){
                             $msg = "ok on continue";
                             if(strlen($commentaire)<1000){
-                                $msg = "<span style='color:#4c8'>votre commentaire a bien été posté</span>";
+                                $msg = "<span style='color:#4c8'>ton commentaire a bien été posté</span>";
                                 $req = $bdd->prepare('INSERT INTO commentaires (pseudo, commentaire, dateEnvoi) VALUES (?,?,?)');
                                 $req->execute(array($pseudo,$commentaire,$datePost));
                                 // var_dump($req);
@@ -71,7 +67,7 @@
                         }
                     }
                     else{
-                        $msg = "remplissez les champs ci-dessus";
+                        $msg = "remplis les champs ci-dessus";
                     }
                 }
                 else{
@@ -80,7 +76,7 @@
             ?>
 
             <table class="liste-commentaire">
-                <?php $reponse = $bdd->query('SELECT * FROM commentaires ORDER BY dateEnvoi ASC');
+                <?php $reponse = $bdd->query('SELECT UPPER(pseudo) as pseudo,id,commentaire,dateEnvoi FROM commentaires ORDER BY dateEnvoi DESC');
                 while ($donnees = $reponse->fetch()){
                 ?>
                 <tbody class="panneauComm">
@@ -89,6 +85,12 @@
                     </tr>
                     <tr>
                         <td class="comm"><?php echo $donnees['commentaire'];?></td>
+                        <?php if(isset($_SESSION['role'])){
+                        ?>
+                            <td><a href="supprimer.php?id=<?php echo $donnees['id'];?>">delete</a></td>
+                        <?php
+                        }
+                        ?>
                     </tr>
                 </tbody>
                 <?php
@@ -97,7 +99,17 @@
             </table>
         </div>
         <div class="console-erreur">
-            <p style='color:red'><?php if(isset($msg)){echo $msg;}?></p>
+            <div>
+            <p style='color:red;opacity:0.64'><?php if(isset($msg)){echo $msg;}?></p>
+            <?php
+            $req2 = $bdd->query('SELECT COUNT(*) AS nbCommentaires FROM commentaires');
+                while ($donnees = $req2->fetch())
+                {
+                    ?><p><?php echo $donnees['nbCommentaires'];?></p><?php
+                }
+            ?>
+            <?php $req2->closeCursor();?>
+            </div>
         </div>
     
 
@@ -105,6 +117,5 @@
     </body>
     <script src='js/pages/quelques-ouvrages.js' type="module"></script>
 </html>
-
 
 

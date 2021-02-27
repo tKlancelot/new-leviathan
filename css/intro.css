@@ -239,4 +239,9 @@
 .myImage {
   animation: fadeInOut 10s linear; }
 
+#connect {
+  position: absolute;
+  top: 0;
+  right: 0; }
+
 /*# sourceMappingURL=intro.css.map */

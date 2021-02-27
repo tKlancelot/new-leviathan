@@ -2,6 +2,15 @@
     <html lang="fr">
     <?php
     $title = 'nouveau portfolio';
+    session_start();
+    if($_SESSION['role']){
+        echo "session detruite";
+        session_destroy();
+    }
+    else{
+        session_start();
+        echo "utilisateur";
+    }
     ?>
     <?php include('head.php'); ?>
     <body>
@@ -18,8 +27,21 @@
         <?php
             include('assets/intro-svg/intro-sphere.svg');
         ?>
-        <?php
-        ?>
+        <div id="connect">
+            <form action="" method="POST">
+                <input type="password" name="password" value="password">
+                <input type="submit" value="admin">
+            </form>
+        </div>
     </body>
+    <?php 
+        if(isset($_POST['password'])AND !empty($_POST['password'])){
+            $password = $_POST['password'];
+            if($password == "!stratien86%"){
+                $_SESSION['role'] = "admin";
+                echo $_SESSION['role'];
+            }
+        }
+    ?>
     <script src='js/pages/intro.js' type="module"></script>
 </html>

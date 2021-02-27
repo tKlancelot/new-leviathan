@@ -19,6 +19,9 @@ myRequest.addEventListener("load",function(){
     // }
 });
 
+let connexion = document.querySelector('#connect');
+// connexion.remove();
+
 // DÉCLARATIONS VARIABLES
 
 let toggleMenu = 0;
