@@ -9,5 +9,6 @@
     // echo $_GET['id'];
     $req = $bdd->prepare('DELETE FROM commentaires WHERE id = ?');
     $req->execute(array($_GET['id']));
-    header('Location: quelques-ouvrages.php');
+    // header('Location: quelques-ouvrages.php');
+    header('Location: http://www.leviathan-pacifique.fr/quelques-ouvrages.php');
 ?>
