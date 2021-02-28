@@ -11,4 +11,5 @@
     $req->execute(array($_GET['id']));
     // header('Location: quelques-ouvrages.php');
     header('Location: http://www.leviathan-pacifique.fr/quelques-ouvrages.php');
+    exit();
 ?>
