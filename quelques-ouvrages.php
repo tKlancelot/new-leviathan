@@ -52,20 +52,26 @@
                     $msg = "post pseudo et post commentaire existent";
                     if(!empty($pseudo) AND !empty($commentaire)){
                         $msg = "variable pseudo et commentaire non vide";
-                        if(strlen($pseudo) < 10){
-                            $msg = "ok on continue";
-                            if(strlen($commentaire)<1000){
-                                $msg = "<span style='color:#4c8'>ton commentaire a bien été posté</span>";
-                                $req = $bdd->prepare('INSERT INTO commentaires (pseudo, commentaire, dateEnvoi) VALUES (?,?,?)');
-                                $req->execute(array($pseudo,$commentaire,$datePost));
-                                // var_dump($req);
-                            }
+                        if(!empty($datePost)){
+                        $msg = "variable date non vide";    
+                            if(strlen($pseudo) < 10){
+                                $msg = "ok on continue";
+                                if(strlen($commentaire)<1000){
+                                    $msg = "<span style='color:#4c8'>ton commentaire a bien été posté</span>";
+                                    $req = $bdd->prepare('INSERT INTO commentaires (pseudo, commentaire, dateEnvoi) VALUES (?,?,?)');
+                                    $req->execute(array($pseudo,$commentaire,$datePost));
+                                    // var_dump($req);
+                                }
+                                else{
+                                    $msg = "ton message est trop long";
+                                }
+                            }                        
                             else{
-                                $msg = "ton message est trop long";
+                                $msg = "le pseudo est trop long";
                             }
-                        }                        
+                        }
                         else{
-                            $msg = "le pseudo est trop long";
+                            $msg = "date non renseignée";
                         }
                     }
                     else{
