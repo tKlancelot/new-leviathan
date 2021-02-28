@@ -1,15 +1,17 @@
+<?php 
+session_start();
+?>
+
 <!DOCTYPE html>
     <html lang="fr">
     <?php
     $title = 'nouveau portfolio';
-    session_start();
     if($_SESSION['role']){
-        echo "session detruite";
+        ?><p style="color:red"><?php echo "session detruite";?><p><?php
         session_destroy();
     }
     else{
         session_start();
-        echo "utilisateur";
     }
     ?>
     <?php include('head.php'); ?>
