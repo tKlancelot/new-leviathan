@@ -30,7 +30,7 @@
                     <option value="css">css</option>
                     <option value="js">javascript</option>
                 </select>
-                <input id="submit" type="submit" value="valider">
+                <input class="submit" type="submit" value="valider">
             </div>
         </form>
         <?php

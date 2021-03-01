@@ -76,7 +76,7 @@
 .oneSection {
   background-color: var(--themaDark);
   margin: 2rem auto;
-  width: 60%; }
+  width: 92%; }
 
 .oneSection, .oneSection td, th {
   border: 1px solid var(--themaDarkest);
@@ -121,7 +121,7 @@ th {
     font-family: "Denk One";
     text-transform: uppercase; }
   .myForm1 h4, .myForm1 .sectionForm label {
-    color: var(--themaDarkest); }
+    color: var(--themaUltraDark); }
   .myForm1 .sectionForm {
     display: flex;
     width: 100%;
@@ -142,12 +142,13 @@ th {
       margin: 0.1rem;
       display: flex;
       padding: 4px; }
-    .myForm1 .sectionForm #submit, .myForm1 .sectionForm select {
+    .myForm1 .sectionForm .submit, .myForm1 .sectionForm select, .myForm1 .sectionForm .retour {
       display: flex;
       margin: 0.2rem 1.1rem;
       flex-basis: 25%; }
-    .myForm1 .sectionForm #submit {
+    .myForm1 .sectionForm .submit, .myForm1 .sectionForm .retour {
       flex-basis: 10%;
+      padding: 4px;
       justify-content: center; }
   .myForm1 .lastRow {
     justify-content: flex-start;
@@ -157,7 +158,9 @@ th {
   text-align: center;
   width: 10%; }
   .modifier a, .supprimer a {
-    color: red; }
+    font-size: 1rem; }
+    .modifier a:hover, .supprimer a:hover {
+      color: orangered; }
 
 .profiler {
   background-color: var(--themaDark);
@@ -183,13 +186,15 @@ th {
 
 .centerTd {
   text-align: center;
-  align-items: center; }
+  align-items: center;
+  height: 10px !important; }
 
 .niveauTech {
   width: 8%;
   color: whitesmoke;
   font-family: "Denk One",cursive;
-  font-size: 0.9rem; }
+  font-size: 0.9rem;
+  height: 10px !important; }
 
 .niveauGreen {
   background-color: #47b379 !important; }
@@ -215,5 +220,8 @@ th {
 
 .fullContent {
   display: none !important; }
+
+form {
+  margin-block-end: unset; }
 
 /*# sourceMappingURL=techniques.css.map */

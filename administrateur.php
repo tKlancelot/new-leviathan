@@ -33,8 +33,8 @@
         <div class="sousPanneau1">
 
         <?php
-            getAll($bdd,'techniques','titreTechnique','nomTechnique','description');
-            getAll($bdd,'commentaires','pseudo','dateEnvoi','commentaire');
+            getAll($bdd,'techniques','titreTechnique','nomTechnique','description','niveauTech');
+            getAll($bdd,'commentaires','pseudo','dateEnvoi','commentaire','');
         ?>
 
         </div>
