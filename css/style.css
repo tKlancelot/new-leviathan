@@ -1348,7 +1348,7 @@ td {
     display: flex;
     flex-direction: column;
     margin: 1rem 0rem;
-    padding: 0.6rem; }
+    padding: 0.4rem; }
   .onglet h4 {
     text-transform: uppercase;
     font-weight: normal;
@@ -1388,7 +1388,8 @@ td {
     display: flex;
     width: 100%;
     margin: 1rem 1rem 0;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    opacity: 0.64; }
 
 .active {
   display: flex !important; }
@@ -1491,6 +1492,34 @@ th {
       flex-basis: auto;
       align-items: center;
       margin: auto; }
+
+.tableTech {
+  background-color: var(--themaDark); }
+  .tableTech td {
+    background-color: var(--themaMedium); }
+
+.tableTech, .tableTech td {
+  border-spacing: 8px;
+  padding: 4px; }
+
+.centerTd {
+  text-align: center;
+  align-items: center; }
+
+.niveauTech {
+  width: 8%;
+  color: whitesmoke;
+  font-family: "Denk One",cursive;
+  font-size: 0.9rem; }
+
+.niveauGreen {
+  background-color: #47b379 !important; }
+
+.niveauBlue {
+  background-color: #4a90be !important; }
+
+.niveauRed {
+  background-color: #be4a6d !important; }
 
 @media (orientation: landscape) and (max-width: 800px) {
   nav {
