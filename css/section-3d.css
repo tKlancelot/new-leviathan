@@ -37,10 +37,11 @@
   background-color: var(--themaDark);
   background-blend-mode: luminosity; }
 
-.buttonA[disabled], .buttonB[disabled] {
-  opacity: 0; }
+.buttonA[disabled], .buttonB[disabled], .buttonC[disabled] {
+  opacity: 0;
+  cursor: default !important; }
 
-.buttonA, .buttonB {
+.buttonA, .buttonB, .buttonC {
   background: radial-gradient(circle, #4C57bF, #5C67CF, #7C87eF);
   box-shadow: 0px 0px 1px white inset,0px 0px 2px white inset,0px 0px 3px white inset,0px 0px 4px white inset;
   border-radius: 8px;
@@ -53,6 +54,10 @@
 .buttonB {
   background: radial-gradient(circle, #51b792, #61C7A2, #71d7b2);
   box-shadow: 0px 0px 1px white inset,0px 0px 2px white inset,0px 0px 3px white inset,0px 0px 4px white inset; }
+
+.buttonC {
+  background: radial-gradient(circle, #d45060, #E46070, #f47080);
+  box-shadow: 0px 0px 1px white inset, 0px 0px 2px white inset, 0px 0px 3px white inset, 0px 0px 4px white inset; }
 
 .sousPanneau {
   margin: auto;

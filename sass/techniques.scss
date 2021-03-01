@@ -1,0 +1,200 @@
+.bodyTechniques{
+    flex-direction: column;
+    nav, .cadreConteneur .divContenu{
+        background-color:var(--themaDark);
+        border:unset;
+    }
+}
+
+
+.bodyTechniques .cadreConteneur .cadreContent{
+    background-color:var(--themaMedium);
+    background-size: cover;
+    margin: auto;
+    height: 512px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.onglet{
+    display:none;
+    margin:1rem;
+    // width:100%;
+    font-family: "Lato",sans-serif;
+    color:var(--themaDarkest);
+    letter-spacing: 0.02rem;
+    flex-direction: column;
+    div{
+        // border:1px solid var(--themaDarkest);
+        border-radius: 4px;
+        background-color: var(--themaLightest);
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0rem;
+        padding:0.4rem;
+    }
+    h4{
+        text-transform: uppercase;
+        font-weight: normal;
+        text-decoration: underline;
+        text-underline-offset: 0.2rem;
+    }
+    h5{
+        font-weight: normal;
+        font-size: 1rem;
+    }
+    p{
+        font-size: 0.92rem;
+    }
+}
+
+.blocTechnique{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .panneauBouton{
+        display: flex;
+        width: 100%;
+        margin: 1rem 1rem 0;
+    }
+}
+
+.active{
+    display:flex!important;
+}
+
+#boutonHtml, #boutonCss, #boutonJs{
+    flex-basis: 20%;
+}
+
+.oneSection{
+    background-color: var(--themaDark);
+    margin: 2rem auto;
+    width: 60%;
+}
+
+
+
+.oneSection, .oneSection td, th{
+    border: 1px solid var(--themaDarkest);
+    border-spacing: 2px;
+    border-collapse:separate;
+    font-size: 0.84rem;
+    letter-spacing: 0.038rem;
+}
+
+th{
+    width:100%;
+}
+
+.myBodyAdmin{
+    font-family: "Lato",cursive;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    .panneau{
+        max-height: 80vh;
+        height: 80vh;
+        margin: auto;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--themaMedium);
+        .sousPanneau1{
+            // overflow-y: scroll!important;
+            // overflow-y: scroll;
+            overflow: auto;
+            height: 36vh;
+        }
+    }
+}
+
+.myForm1{
+    width: 80%;
+    margin: 1rem auto;
+    border-radius: 4px;
+    padding:4px;
+    background-color: var(--themaDark);
+    display: flex;
+    flex-direction:column;
+    min-height: 36vh;
+    h4{
+        margin:0.5rem 1rem;
+        letter-spacing: 0.06rem;
+        font-weight: normal;
+        font-family: "Denk One";
+        text-transform: uppercase;
+    }
+    h4,.sectionForm label{
+        color:var(--themaDarkest);
+    }
+    .sectionForm{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 6px;
+        // flex-direction: column;
+        justify-content: center;
+        label,input,select{
+            display: flex;
+            margin:0.1rem;
+            font-size: 0.9rem;
+            padding:4px;
+        }
+        label{
+            flex-basis: 25%;
+
+        }
+        input{
+            flex-basis: 70%;
+        }
+        textarea{
+            flex-basis: 96%;
+            margin: 0.1rem;
+            display: flex;
+            padding:4px;
+        }
+        #submit,select{
+            display: flex;
+            margin:0.2rem 1.1rem;
+            flex-basis: 25%;
+
+        }
+        #submit{
+            flex-basis: 10%;
+            justify-content: center;
+        }
+    }
+    .lastRow{
+        justify-content: flex-start;
+        margin: 0.4rem;
+    }
+    
+}
+
+.modifier, .supprimer{
+    text-align: center;
+    width:10%;
+    a{
+        color:red;
+    }
+}
+
+.profiler{
+    background-color: var(--themaDark);
+    width: 100%;
+    margin:0 auto 0;
+    ul{
+        display: flex;
+        list-style: none;
+        height:4vh;
+        li{
+            flex-basis:auto;
+            align-items: center;
+            margin: auto;
+            a{
+                // color:white;
+            }
+        }
+    }
+}

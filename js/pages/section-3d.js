@@ -92,16 +92,21 @@ btnToggleSol = document.querySelector('.toggleSol');
 
 let buttonA = document.createElement('button');
 let buttonB = document.createElement('button');
+let buttonC = document.createElement('button');
 buttonA.classList = "buttonA";
 buttonB.classList = "buttonB";
+buttonC.classList = "buttonC";
 
 buttonA.textContent = "a";
 buttonB.textContent = "b";
+buttonC.textContent = "c";
 
 sousPanneauDroit.append(buttonA);
 sousPanneauDroit.append(buttonB);
+sousPanneauDroit.append(buttonC);
 buttonB.setAttribute('disabled','');
 buttonA.setAttribute('disabled','');
+buttonC.setAttribute('disabled','');
 
 
 // DECLARATIONS 3D
@@ -124,6 +129,7 @@ const url11 = './assets/3d/canape-modular-2.glb';
 const url12 = './assets/3d/canape-modular-1.glb';
 const url13 = './assets/3d/greenPlant.glb';
 const url14 = './assets/3d/siege-rotin.glb';
+const url15 = './assets/3d/minos.glb';
 const controls = new THREE.OrbitControls( camera, renderer.domElement);
 camera.position.z = 12;
 camera.position.y = 6;
@@ -139,6 +145,7 @@ ambientLight1.position.x = 1.5;
 const myArray = [];
 let MODEL_PATHS = [url,url2,url3,url10,url11,url12,url13,url14];
 let MODEL_PATHS_2 = [url4,url5,url6,url7,url8,url9];
+let MODEL_PATHS_3 = [url15];
 let myFloor, myFloor2, myFloor3,myFloor4;
 let myFloorArray = [];
 let toggleTheme = 0;
@@ -150,6 +157,7 @@ let toggleWindow = 0;
 let toggleFloor = 0;
 let houseRemoved = 0;
 let scene2Array = [];
+let scene3Array = [];
 
 
 function loadThis(){
@@ -168,17 +176,31 @@ function loadScene2(){
     }
 }
 
+function loadScene3(){
+    for (let i = 0 ;i < MODEL_PATHS_3.length; i++){
+        gltfLoader.load(MODEL_PATHS_3[i], (gltf) => {
+            scene3Array.push(gltf.scene);
+        });
+    }
+}
+
 const promise1 = new Promise((resolve, reject) => {
     paraLegend.textContent = "chargement des objets en cours...";
     setTimeout(() => {
       resolve(myArray);
-    }, 36000);
+    }, 10000);
 });
 
 const promise2 = new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve(scene2Array);
-    }, 36000);
+    }, 10000);
+});
+
+const promise3 = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(scene3Array);
+    }, 10000);
 });
 
 function configFloor(){
@@ -221,6 +243,7 @@ function createScene(parent){
     configFloor();
     loadThis();
     loadScene2();
+    loadScene3();
     promise1.then((value) => {
         paraLegend.textContent = objet3d.description;
         ajouterTousLesObjets(value);
@@ -351,9 +374,6 @@ function supprimerTousLesObjets(tableau){
 }
 
 function initPosition(){
-
-
-
     scene2Array[0].position.z = 4.5; //plant
     scene2Array[0].position.x = 2.5; //plant
 
@@ -379,10 +399,25 @@ function initPosition(){
 
 }
 
+function initMinosPosition(){
+    // scene3Array[0].position.z = 4.5;
+    scene3Array[0].scale.x = 0.7;
+    scene3Array[0].scale.y = 0.7;
+    scene3Array[0].scale.z = 0.7;
+    // scene3Array[0].position.y = 1.165;
+}
+
+promise3.then((value) => {
+    initMinosPosition();
+    buttonC.removeAttribute('disabled');
+});
+
 promise2.then((value) => {
     initPosition();
+    initMinosPosition();
     buttonB.removeAttribute('disabled');
     buttonA.removeAttribute('disabled');
+    buttonC.removeAttribute('disabled');
 });
 
 let arrayButtons = [btnToggleSol,btnToggleToit,btnTogglePorte,btnToggleMurs,btnToggleFenetre,btnToggleCloison,boutonPaint];
@@ -403,8 +438,15 @@ function enableButtons(){
     }
 }
 
+let minosToggled = 0;
+
 
 buttonB.addEventListener("click",function(){
+    if(minosToggled == 1){
+        scene.add(ambientLight1);
+        supprimerTousLesObjets(scene3Array);
+        minosToggled = 0;
+    }
     supprimerTousLesObjets(myArray);
     scene.remove(myFloorArray[1]);
     ajouterTousLesObjets(scene2Array);
@@ -415,12 +457,32 @@ buttonB.addEventListener("click",function(){
 })
 
 buttonA.addEventListener("click",function(){
-    if (houseRemoved == 1){
+    if((minosToggled == 1)||(houseRemoved == 1)){
+        scene.add(ambientLight1);
+        supprimerTousLesObjets(scene3Array);
         supprimerTousLesObjets(scene2Array);
         ajouterTousLesObjets(myArray);
         scene.remove(myFloorArray[3]);
         scene.add(myFloorArray[1]);
-        houseRemoved = 0;
         enableButtons();
+        minosToggled = 0;
+        houseRemoved = 0;
     }
+})
+
+
+const axesHelper = new THREE.AxesHelper( 10 );
+// scene.add(axesHelper);
+
+buttonC.addEventListener("click",function(){
+    // supprimerTousLesObjets(scene2Array);
+    // supprimerTousLesObjets(myArray);
+    // ajouterTousLesObjets(scene3Array);
+    // scene.remove(myFloorArray[3]);
+    // scene.add(myFloorArray[1]);
+    // scene.remove(ambientLight1);
+    // houseRemoved = 0;
+    // enableButtons();
+    // minosToggled = 1;
+    alert('bientôt disponible');
 })

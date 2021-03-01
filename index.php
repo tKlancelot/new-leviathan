@@ -41,6 +41,7 @@ session_start();
             $password = $_POST['password'];
             if($password == "!stratien86%"){
                 $_SESSION['role'] = "admin";
+                $_SESSION['prenom'] = "tarik";
                 echo $_SESSION['role'];
             }
         }

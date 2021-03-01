@@ -6,8 +6,10 @@ export default function AllLegendes(index){
     'memory game', 
     'section 3d', 
     'diaporama', 
+    'techniques',
     'mentions légales', 
-    'à la prochaine !' 
+    'à la prochaine !',
+    'espace admin'
     ]
     return allLegendes[index];
 }

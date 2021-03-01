@@ -1,14 +1,13 @@
 <?php
     session_start();
-	// $bdd = new PDO('mysql:host=127.0.0.1;dbname=espace-commentaire;charset=utf8','root','root');    
-	$bdd = new PDO('mysql:host=db5001841472.hosting-data.io;dbname=dbs1514150;charset=utf8','dbu253495','!a8tAm9Rx792A8CD%');
+    require('connexion-bdd.php');
 ?>
 
 
 <?php
-    if($_SESSION['role'] == "admin"){
-        var_dump($_SESSION['role']);
-    }
+    // if($_SESSION['role'] == "admin"){
+    //     var_dump($_SESSION);
+    // }
 ?>
 
 <!DOCTYPE html>
@@ -93,12 +92,6 @@
                     </tr>
                     <tr>
                         <td class="comm"><?php echo $donnees['commentaire'];?></td>
-                        <?php if(isset($_SESSION['role'])){
-                        ?>
-                            <td><a href="supprimer.php?id=<?php echo $donnees['id'];?>">delete</a></td>
-                        <?php
-                        }
-                        ?>
                     </tr>
                 </tbody>
                 <?php

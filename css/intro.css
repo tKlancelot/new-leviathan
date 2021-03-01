@@ -35,7 +35,7 @@
   color: var(--themaDark);
   animation: none !important; }
 
-.hexagones, .bodyParcours, .bodyCarteVisite, .bodyOuvrages, .bodyMemory, .body3d, .bodyDiapo, .bodyMentions {
+.hexagones, .bodyParcours, .bodyCarteVisite, .bodyOuvrages, .bodyMemory, .body3d, .bodyDiapo, .bodyMentions, .bodyTechniques {
   background-position: center;
   min-height: 72vh !important;
   max-height: 100vh;

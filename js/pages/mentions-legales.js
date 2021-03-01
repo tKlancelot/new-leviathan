@@ -16,7 +16,7 @@ function Mentions(){
         "informations légales",
         "les mentions légales de ce site",
         "#9ca0a5",
-        6,
+        7,
         'bodyMentions',
         "assets/intro-svg/icon-mentions.svg" 
     )
