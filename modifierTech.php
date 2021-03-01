@@ -66,7 +66,7 @@
             var_dump($_POST);
             var_dump($id);
             // die();
-            header("Location: administrateur.php");
+            header("Location: http://leviathan-pacifque.fr/administrateur.php");
         }
     }
 ?>
@@ -75,6 +75,7 @@
 
 <script>
     function myFunction(){
-        window.location('administrateur.php');
+        // window.location('administrateur.php');
+        window.location('http://leviathan-pacifque.fr/administrateur.php');
     }
 </script>
