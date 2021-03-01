@@ -16,8 +16,9 @@ function listCateg($bdd,string $categ){
                     else{
                         $desc = substr($donnees['description'],0,120);
                         // var_dump($desc);
+                        echo $desc; 
                         echo '<span class="fullContent">'. substr($donnees['description'],120,-1).'</span>';
-                        echo $desc. '<button class="toggleContent">...</button>';
+                        echo '<button class="toggleContent">...</button>';
                     }
                     ?>
                     </td>
