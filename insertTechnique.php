@@ -5,6 +5,7 @@ if(isset($_POST['titreTechnique']) AND (isset($_POST['description']))){
     $description = htmlspecialchars($_POST['description']);
     $nomTechnique = $_POST['nomTechnique'];
     $categTechnique = $_POST['categoryTech'];
+    $niveauTech = $_POST['niveauTech'];
     $msg = "desc titre et nomtech existent";
     if(!empty($titreTechnique) AND !empty($description)){
         $msg = "variable description et titreTechnique non vide";
@@ -16,8 +17,8 @@ if(isset($_POST['titreTechnique']) AND (isset($_POST['description']))){
                 $msg="ok";
                     if(strlen($description)<1000){
                         $msg = "<span style='color:#4c8'>ta technique a bien été enregistrée</span>";
-                        $req = $bdd->prepare('INSERT INTO techniques (nomTechnique, titreTechnique, description, categoryTech) VALUES (?,?,?,?)');
-                        $req->execute(array($nomTechnique,$titreTechnique,$description,$categTechnique));
+                        $req = $bdd->prepare('INSERT INTO techniques (nomTechnique, titreTechnique, description, categoryTech, niveauTech) VALUES (?,?,?,?,?)');
+                        $req->execute(array($nomTechnique,$titreTechnique,$description,$categTechnique,$niveauTech));
                     }
                     else{
                         $msg = "ton description est trop longue";

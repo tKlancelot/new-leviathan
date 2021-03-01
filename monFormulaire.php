@@ -18,6 +18,13 @@
                 <textarea name="description"  cols="50" rows="4" placeholder="saisis une description pour cette technique"></textarea>
             </div>
             <div class="sectionForm lastRow">
+                <select name="niveauTech">
+                    <option value="easy">facile</option>
+                    <option value="medium">intermédiaire</option>
+                    <option value="harder">difficile</option>
+                </select>
+            </div>
+            <div class="sectionForm lastRow">
                 <select name="categoryTech">
                     <option value="html">html</option>
                     <option value="css">css</option>
