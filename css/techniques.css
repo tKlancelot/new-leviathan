@@ -205,6 +205,8 @@ th {
 .description {
   height: 6vh;
   overflow-y: scroll; }
+  .description button {
+    display: block; }
 
 .fullContent {
   display: none !important; }
