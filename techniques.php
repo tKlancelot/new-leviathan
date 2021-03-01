@@ -30,9 +30,9 @@ if(empty($_SESSION)){
 
         <div class="blocTechnique">
             <div class="panneauBouton">
-                <button id="boutonHtml">html</button>
-                <button id="boutonCss">css</button>
-                <button id="boutonJs">javaScript</button>
+                <button id="boutonHtml"></button>
+                <button id="boutonCss"></button>
+                <button id="boutonJs"></button>
             </div>
 
             <div class="onglet active">

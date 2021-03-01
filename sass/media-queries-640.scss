@@ -807,4 +807,12 @@
         }
     }
 
+    .blocTechnique .panneauBouton{
+        margin:1rem auto; 
+    }
+    #boutonHtml, #boutonCss, #boutonJs{
+        width:48px;
+        height:48px;
+    }
+
 }

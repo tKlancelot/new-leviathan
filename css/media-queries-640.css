@@ -631,6 +631,13 @@
   .onglet div h5 {
     margin: 0.5rem 0rem; }
   .onglet div p {
-    font-size: 0.8rem; } }
+    font-size: 0.8rem; }
+
+  .blocTechnique .panneauBouton {
+    margin: 1rem auto; }
+
+  #boutonHtml, #boutonCss, #boutonJs {
+    width: 48px;
+    height: 48px; } }
 
 /*# sourceMappingURL=media-queries-640.css.map */

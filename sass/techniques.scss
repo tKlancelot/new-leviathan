@@ -31,21 +31,46 @@
         display: flex;
         flex-direction: column;
         margin: 1rem 0rem;
-        padding:0.4rem;
+        padding:0.6rem;
     }
     h4{
         text-transform: uppercase;
         font-weight: normal;
-        text-decoration: underline;
-        text-underline-offset: 0.2rem;
+        color:var(--themaTransp);
+        margin:0rem 0rem 0.5rem;
+        // text-decoration: underline;
+        // text-underline-offset: 0.2rem;
     }
     h5{
         font-weight: normal;
-        font-size: 1rem;
+        font-size: 0.9rem;
+        // text-transform: uppercase;
+        font-style:italic;
     }
     p{
-        font-size: 0.92rem;
+        font-size: 0.84rem;
+        text-align: justify;
     }
+}
+
+#boutonHtml,#boutonCss,#boutonJs{
+    height:64px;
+    width:64px;
+    border:unset;
+    background:unset;
+    background-position: center;
+    background-size:cover;
+    cursor: pointer;
+}
+
+#boutonHtml{
+    background-image: url('../assets/intro-svg/icone-technique-html.svg');
+}
+#boutonCss{
+    background-image: url('../assets/intro-svg/icone-technique-css.svg');
+}
+#boutonJs{
+    background-image: url('../assets/intro-svg/icone-technique-javascript.svg');
 }
 
 .blocTechnique{
@@ -56,6 +81,7 @@
         display: flex;
         width: 100%;
         margin: 1rem 1rem 0;
+        justify-content: space-evenly;
     }
 }
 
@@ -63,9 +89,7 @@
     display:flex!important;
 }
 
-#boutonHtml, #boutonCss, #boutonJs{
-    flex-basis: 20%;
-}
+
 
 .oneSection{
     background-color: var(--themaDark);
@@ -192,9 +216,6 @@ th{
             flex-basis:auto;
             align-items: center;
             margin: auto;
-            a{
-                // color:white;
-            }
         }
     }
 }
