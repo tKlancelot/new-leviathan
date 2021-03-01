@@ -24,6 +24,10 @@
     color:var(--themaDarkest);
     letter-spacing: 0.02rem;
     flex-direction: column;
+    overflow-y: scroll;
+    // &::-webkit-scrollbar{
+    //     visibility: visible;
+    // }
     div{
         // border:1px solid var(--themaDarkest);
         border-radius: 4px;
@@ -266,11 +270,16 @@ th{
     visibility: hidden;
 }
 .description{
-    height: 6vh;
-    overflow-y: scroll;
+    text-align: justify;
     button{
         display: block;
     }
+}
+
+.toggleContent{
+    font-size:1.1rem;
+    font-weight: bolder;
+    width:40px;
 }
 
 .fullContent{

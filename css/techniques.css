@@ -18,7 +18,8 @@
   font-family: "Lato",sans-serif;
   color: var(--themaDarkest);
   letter-spacing: 0.02rem;
-  flex-direction: column; }
+  flex-direction: column;
+  overflow-y: scroll; }
   .onglet div {
     border-radius: 4px;
     background-color: var(--themaDark);
@@ -203,10 +204,14 @@ th {
   visibility: hidden; }
 
 .description {
-  height: 6vh;
-  overflow-y: scroll; }
+  text-align: justify; }
   .description button {
     display: block; }
+
+.toggleContent {
+  font-size: 1.1rem;
+  font-weight: bolder;
+  width: 40px; }
 
 .fullContent {
   display: none !important; }

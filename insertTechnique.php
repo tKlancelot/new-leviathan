@@ -2,8 +2,8 @@
 
 if(isset($_POST['titreTechnique']) AND (isset($_POST['description']))){
     $titreTechnique = htmlspecialchars($_POST['titreTechnique']);
-    $description = htmlspecialchars($_POST['description']);
-    $nomTechnique = $_POST['nomTechnique'];
+    $description = $_POST['description'];
+    $nomTechnique = htmlspecialchars($_POST['nomTechnique']);
     $categTechnique = $_POST['categoryTech'];
     $niveauTech = $_POST['niveauTech'];
     $msg = "desc titre et nomtech existent";

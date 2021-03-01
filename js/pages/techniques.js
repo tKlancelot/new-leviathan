@@ -73,10 +73,12 @@ function Techniques(){
             let divContent = element.previousElementSibling;
             if(contenuToggled == 0){
                 divContent.classList.remove('fullContent');
+                element.textContent = "↑";
                 contenuToggled = 1;
             }
             else{
                 divContent.classList.add('fullContent');
+                element.textContent = "...";
                 contenuToggled = 0;
             }
         })
