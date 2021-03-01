@@ -51,6 +51,13 @@
     }
 ?>
 
+<script>
+    function myFunction(){
+        // window.location('administrateur.php');
+        window.location('http://www.leviathan-pacifique.fr/administrateur.php');
+    }
+</script>
+
 
 <?php
     function updateTechnique($bdd){
@@ -66,16 +73,10 @@
             var_dump($_POST);
             var_dump($id);
             // die();
-            header("Location: http://leviathan-pacifique.fr/administrateur.php");
+            header("Location: http://www.leviathan-pacifique.fr/administrateur.php");
         }
     }
 ?>
 
 </div>
 
-<script>
-    function myFunction(){
-        // window.location('administrateur.php');
-        window.location('http://leviathan-pacifique.fr/administrateur.php');
-    }
-</script>
