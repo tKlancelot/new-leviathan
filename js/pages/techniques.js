@@ -63,6 +63,26 @@ function Techniques(){
         addActive(2);
     })
 
+    let allBoutonToggle = document.querySelectorAll('.toggleContent');
+    console.log(allBoutonToggle);
+    let contenuToggled = 0;
+
+    allBoutonToggle.forEach(element =>
+        // console.log(element)
+        element.addEventListener("click",function(){
+            let divContent = element.previousElementSibling;
+            if(contenuToggled == 0){
+                divContent.classList.remove('fullContent');
+                contenuToggled = 1;
+            }
+            else{
+                divContent.classList.add('fullContent');
+                contenuToggled = 0;
+            }
+        })
+    );
+
+
 }
 
 Techniques();

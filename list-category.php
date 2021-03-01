@@ -9,7 +9,18 @@ function listCateg($bdd,string $categ){
             <h5><?php echo $donnees['nomTechnique'];?></h5>
             <table class="tableTech">
                 <tr>
-                    <td rowspan="2"><?php echo $donnees['description'];?></td>
+                    <td class="description" rowspan="2"><?php
+                    if(strlen($donnees['description']) < 120){
+                        echo $donnees['description'];
+                    }     
+                    else{
+                        $desc = substr($donnees['description'],0,120);
+                        // var_dump($desc);
+                        echo '<span class="fullContent">'. substr($donnees['description'],120,-1).'</span>';
+                        echo $desc. '<button class="toggleContent">...</button>';
+                    }
+                    ?>
+                    </td>
                     <?php 
                         if($donnees['niveauTech'] == "easy"){
                             echo '<td class="niveauTech centerTd niveauGreen">';

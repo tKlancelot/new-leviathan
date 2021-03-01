@@ -199,4 +199,14 @@ th {
 .niveauRed {
   background-color: #be4a6d !important; }
 
+.description::-webkit-scrollbar {
+  visibility: hidden; }
+
+.description {
+  height: 6vh;
+  overflow-y: scroll; }
+
+.fullContent {
+  display: none !important; }
+
 /*# sourceMappingURL=techniques.css.map */

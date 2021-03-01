@@ -47,7 +47,7 @@ if(empty($_SESSION)){
             </div>  
             <div class="onglet">
                 <?php
-                    listCateg($bdd,'javaScript');
+                    listCateg($bdd,'js');
                 ?>
             </div>  
         </div>
