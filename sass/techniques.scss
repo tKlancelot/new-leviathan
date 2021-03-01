@@ -27,21 +27,23 @@
     div{
         // border:1px solid var(--themaDarkest);
         border-radius: 4px;
-        background-color: var(--themaLightest);
+        // background-color: var(--themaLightest);
+        background-color: var(--themaDark);
         display: flex;
         flex-direction: column;
         margin: 1rem 0rem;
         padding: 0.4rem;
+        color:var(--themaUltraDark);
     }
     h4{
         text-transform: uppercase;
         font-weight: normal;
-        color:var(--themaTransp);
-        margin:0rem 0rem 0.5rem;
+        margin:0.25rem 0.75rem;
         // text-decoration: underline;
         // text-underline-offset: 0.2rem;
     }
     h5{
+        margin:0.25rem 0.75rem;
         font-weight: normal;
         font-size: 0.9rem;
         // text-transform: uppercase;
