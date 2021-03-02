@@ -1328,7 +1328,7 @@ td {
     border: unset; }
 
 .bodyTechniques .cadreConteneur .cadreContent {
-  background-color: var(--themaMedium);
+  background-color: var(--themaDark);
   background-size: cover;
   margin: auto;
   height: 512px;
@@ -1343,9 +1343,11 @@ td {
   letter-spacing: 0.02rem;
   flex-direction: column;
   overflow-y: scroll; }
+  .onglet::-webkit-scrollbar {
+    visibility: hidden; }
   .onglet div {
     border-radius: 4px;
-    background-color: var(--themaDark);
+    background-color: var(--themaMedium);
     display: flex;
     flex-direction: column;
     margin: 1rem 0rem;
@@ -1505,7 +1507,8 @@ th {
 
 .tableTech, .tableTech td {
   border-spacing: 8px;
-  padding: 4px; }
+  padding: 4px;
+  border-radius: 4px; }
 
 .centerTd {
   text-align: center;
